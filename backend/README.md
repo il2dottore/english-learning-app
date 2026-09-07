@@ -1,14 +1,8 @@
-# Backend FastAPI
+# FastAPI Backend
 
-Backend scaffold cho team phát triển tiếp:
+A small FastAPI + SQLite backend scaffold managed with UV.
 
-- FastAPI với root endpoint `Hello World`.
-- SQLite + SQLAlchemy 2.x, session dependency và seed dữ liệu tự động.
-- Alembic config sẵn cho database migrations.
-- Module demo `products` có đủ router, service, repository, schema và model.
-- `auth` và `users` đã có khung module để mở rộng sau.
-
-## Chạy bằng UV
+## Run
 
 ```bash
 cd backend
@@ -16,38 +10,54 @@ uv sync --dev
 uv run uvicorn app.main:app --reload --host 127.0.0.1 --port 8000
 ```
 
-Mở <http://127.0.0.1:8000/docs> để xem API.
+Open <http://127.0.0.1:8000/docs> for Swagger UI.
 
-## API demo
+The root endpoint returns `Hello World`. The demo `products` module reads and seeds SQLite data automatically.
 
-```bash
-curl http://127.0.0.1:8000/
-curl http://127.0.0.1:8000/api/health
-curl http://127.0.0.1:8000/api/products
-curl http://127.0.0.1:8000/api/products/1
+## API
+
+```text
+GET  /                  # Hello World
+GET  /api/health        # Health check
+GET  /api/products      # List products
+GET  /api/products/{id} # Get one product
+POST /api/products      # Create a product
 ```
 
-Database được tạo tại `backend/data/app.db` khi app khởi động lần đầu. Nếu bảng `products` chưa có dữ liệu, app sẽ seed ba product mẫu.
-
-## Migration
+## Checks
 
 ```bash
-uv run alembic revision --autogenerate -m "create products"
-uv run alembic upgrade head
-```
-
-## Test
-
-```bash
-uv run pytest
-```
-
-## Static checks
-
-```bash
+uv run pytest -q
 uv run ruff check .
 uv run ruff format --check .
 uv run pyright
 ```
 
-`ruff` kiểm tra lint/import và format; `pyright` kiểm tra kiểu tĩnh cho `app/` và `tests/`.
+## Structure
+
+```text
+backend/
+|-- app/
+|   |-- main.py                         # FastAPI application entry point
+|   |-- core/                           # Settings, logging, security, exceptions
+|   |-- db/
+|   |   |-- base.py                      # SQLAlchemy declarative base
+|   |   |-- session.py                   # SQLite engine, sessions, seed data
+|   |   \-- migrations/                  # Alembic configuration and revisions
+|   |-- modules/
+|   |   |-- products/                    # Complete demo module
+|   |   |   |-- router.py                # HTTP endpoints
+|   |   |   |-- service.py               # Business logic
+|   |   |   |-- repository.py            # Database queries
+|   |   |   |-- schemas.py               # Request/response schemas
+|   |   |   \-- models.py                # SQLAlchemy model
+|   |   |-- auth/                        # Auth module scaffold
+|   |   \-- users/                       # Users module scaffold
+|   \-- common/                          # Shared dependencies and helpers
+|-- tests/                               # API and module tests
+|-- data/                                # Local SQLite database files
+|-- alembic.ini                          # Alembic settings
+|-- pyproject.toml                       # Project and tool configuration
+|-- .env.example                         # Environment template
+\-- Dockerfile                           # Container image definition
+```

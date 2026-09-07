@@ -1,15 +1,20 @@
-# english-learning-app
-English Learning Application - Mock Project 
+# English Learning Application
 
-## Project structure
+Mock English learning project with a FastAPI backend and an Electron desktop app.
 
-- `backend/`: FastAPI + SQLite backend scaffold managed with UV.
-- `desktop/`: Electron + React + TypeScript desktop application.
-- `data/`: B2 and C1 vocabulary JSON data.
+## Structure
 
-Backend demo module: `GET /api/products` đọc dữ liệu mock từ SQLite; root `GET /` chỉ trả `Hello World`.
+```text
+english-learning-app/
+|-- backend/              # FastAPI, SQLite, tests, and static checks
+|-- desktop/              # Electron + React desktop scaffold
+|-- data/                 # B2 and C1 vocabulary JSON/XLSX files
+\-- README.md             # Project overview
+```
 
-## Run the backend
+## Run
+
+Backend:
 
 ```bash
 cd backend
@@ -17,9 +22,7 @@ uv sync --dev
 uv run uvicorn app.main:app --reload --port 8000
 ```
 
-## Run the desktop app
-
-In another terminal:
+Desktop app, in another terminal:
 
 ```bash
 cd desktop
@@ -27,4 +30,4 @@ npm install
 npm run dev
 ```
 
-The desktop renderer hiện chỉ hiển thị `Hello World`; các module Electron và feature folders đã được scaffold sẵn.
+Backend docs: <http://127.0.0.1:8000/docs>
