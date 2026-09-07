@@ -1,0 +1,27 @@
+:root {
+  font-family: Arial, sans-serif;
+  color: #202124;
+  background: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+#root,
+main {
+  min-height: 100vh;
+}
+
+main {
+  display: grid;
+  place-items: center;
+  font-size: 32px;
+  font-weight: 600;
+}

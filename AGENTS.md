@@ -1,0 +1,1 @@
+Vui lòng kiểm tra Pyright và Ruff mỗi khi hoàn thiện bất cứ yêu cầu nào, bằng cách fix chứ không phải ignore hay suppress.
