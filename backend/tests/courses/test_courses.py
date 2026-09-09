@@ -32,7 +32,7 @@ def test_get_lesson_detail(client: ApiClient) -> None:
 
 
 def test_complete_lesson_and_unlock_next(client: ApiClient) -> None:
-    # 1. Complete Lesson 1
+    # 1. Complete Lesson 1 with passing score
     res = client.post(
         "/api/courses/b2-first/lessons/b2-u1-l1/complete",
         json={"score": 90},
@@ -40,6 +40,8 @@ def test_complete_lesson_and_unlock_next(client: ApiClient) -> None:
     assert res.status_code == 200
     data = res.json()
     assert data["success"] is True
+    assert data["passed"] is True
+    assert data["earned_xp"] == 60
     assert data["completed_lesson_id"] == "b2-u1-l1"
     assert data["next_lesson_id"] == "b2-u1-l2"
 
@@ -51,3 +53,32 @@ def test_complete_lesson_and_unlock_next(client: ApiClient) -> None:
     l2 = next(x for x in u1_lessons if x["id"] == "b2-u1-l2")
     assert l1["is_completed"] is True
     assert l2["is_unlocked"] is True
+
+
+def test_get_lesson_detail_rich_academic_content(client: ApiClient) -> None:
+    res = client.get("/api/courses/b2-first/lessons/b2-u1-l1")
+    assert res.status_code == 200
+    data = res.json()
+    assert "grammar_lesson" in data
+    assert data["grammar_lesson"] is not None
+    assert "concept" in data["grammar_lesson"]
+    assert "formula" in data["grammar_lesson"]
+    assert len(data["grammar_lesson"]["rules"]) > 0
+
+    assert "reading_passage" in data
+    assert data["reading_passage"] is not None
+    assert len(data["reading_passage"]["passage"]) > 50
+    assert data["passing_score_pct"] == 60
+
+
+def test_complete_lesson_failing_score(client: ApiClient) -> None:
+    res = client.post(
+        "/api/courses/b2-first/lessons/b2-u1-l3/complete",
+        json={"score": 40},
+    )
+    assert res.status_code == 200
+    data = res.json()
+    assert data["success"] is True
+    assert data["passed"] is False
+    assert data["earned_xp"] == 0
+    assert data["next_lesson_id"] is None

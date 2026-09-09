@@ -219,15 +219,26 @@ class CourseService:
         # Generate 5 Checkpoint Quiz questions from this lesson's vocab
         checkpoint_quiz = self._generate_lesson_quiz(vocabularies, count=5)
 
+        # Grammar lesson section
+        grammar_data = found_lesson.get("grammar_lesson")
         grammar_notes = (
             f"Điểm ngữ pháp trọng tâm: {found_lesson.get('grammar_focus')}.\n\n"
             "Hãy chú ý cách kết hợp từ vựng và cấu trúc này trong câu ví dụ thực tế."
         )
+        if grammar_data and "rules" in grammar_data:
+            concept_str = grammar_data.get("concept", "")
+            formula_str = grammar_data.get("formula", "")
+            rules_str = "\n".join(f"- {r}" for r in grammar_data.get("rules", []))
+            grammar_notes = f"Điểm ngữ pháp: {concept_str}\n\nCông thức: {formula_str}\n\nQuy tắc:\n{rules_str}"
 
+        # Reading passage section
+        reading_data = found_lesson.get("reading_passage")
         reading_text = (
             f"Chủ đề đọc hiểu: {found_lesson.get('reading_topic')}.\n\n"
             "Đoạn văn học thuật ứng dụng các từ vựng cốt lõi của bài học."
         )
+        if reading_data and "passage" in reading_data:
+            reading_text = f"Tiêu đề: {reading_data.get('title', '')}\n\n{reading_data.get('passage', '')}"
 
         return LessonDetail(
             id=lesson_id,
@@ -242,6 +253,10 @@ class CourseService:
             grammar_notes=grammar_notes,
             reading_topic=found_lesson.get("reading_topic", ""),
             reading_text=reading_text,
+            grammar_lesson=grammar_data,
+            reading_passage=reading_data,
+            passing_score_pct=found_lesson.get("passing_score_pct", 60),
+            reward_xp=found_lesson.get("reward_xp", 60),
             vocabularies=vocabularies,
             checkpoint_quiz=checkpoint_quiz,
             is_completed=is_comp,
@@ -253,14 +268,28 @@ class CourseService:
         if not course:
             raise ResourceNotFoundError(detail=f"Course '{course_id}' not found")
 
+        # Find target lesson
+        found_lesson: dict[str, Any] | None = None
+        for u in course.get("units", []):
+            for l_item in u.get("lessons", []):
+                if l_item["id"] == lesson_id:
+                    found_lesson = l_item
+                    break
+            if found_lesson:
+                break
+
+        if not found_lesson:
+            raise ResourceNotFoundError(detail=f"Lesson '{lesson_id}' not found in course '{course_id}'")
+
         # Find all lesson IDs in order
         all_lessons: list[str] = []
         for u in course.get("units", []):
             for l_item in u.get("lessons", []):
                 all_lessons.append(l_item["id"])
 
-        if lesson_id not in all_lessons:
-            raise ResourceNotFoundError(detail=f"Lesson '{lesson_id}' not found in course '{course_id}'")
+        passing_score = found_lesson.get("passing_score_pct", 60)
+        reward_xp = found_lesson.get("reward_xp", 60)
+        passed = score >= passing_score
 
         full_progress = self._get_user_progress()
         cp = full_progress.setdefault("course_progress", {})
@@ -269,30 +298,47 @@ class CourseService:
             {"completed_lessons": [], "lesson_scores": {}, "last_studied_at": None},
         )
 
-        completed_list = c_entry.setdefault("completed_lessons", [])
-        if lesson_id not in completed_list:
-            completed_list.append(lesson_id)
-
+        completed_list: list[str] = c_entry.setdefault("completed_lessons", [])
         scores_map = c_entry.setdefault("lesson_scores", {})
         scores_map[lesson_id] = max(scores_map.get(lesson_id, 0), score)
         c_entry["last_studied_at"] = datetime.now(UTC).isoformat()
 
-        self._save_user_progress(full_progress)
+        next_lid: str | None = None
+        earned_xp = 0
 
-        # Find next lesson ID
-        curr_idx = all_lessons.index(lesson_id)
-        next_lid = all_lessons[curr_idx + 1] if curr_idx + 1 < len(all_lessons) else None
+        if passed:
+            earned_xp = reward_xp
+            if lesson_id not in completed_list:
+                completed_list.append(lesson_id)
+
+            curr_idx = all_lessons.index(lesson_id)
+            next_lid = all_lessons[curr_idx + 1] if curr_idx + 1 < len(all_lessons) else None
+            feedback = (
+                f"Xuất sắc! Bạn đã vượt qua bài học với {score}% "
+                f"(yêu cầu tối thiểu {passing_score}%) và nhận +{reward_xp} XP."
+            )
+        else:
+            feedback = (
+                f"Bạn đạt {score}%, chưa đạt ngưỡng đỗ {passing_score}%. "
+                "Hãy ôn tập lại từ vựng & ngữ pháp để mở khóa bài tiếp theo nhé!"
+            )
+
+        self._save_user_progress(full_progress)
 
         pct = round((len(completed_list) / max(len(all_lessons), 1)) * 100, 1)
 
         return LessonCompleteResponse(
             success=True,
+            passed=passed,
             course_id=course_id,
             completed_lesson_id=lesson_id,
             score=score,
+            min_passing_score=passing_score,
+            earned_xp=earned_xp,
             next_lesson_id=next_lid,
             unlocked_new_unit=False,
             course_progress_percentage=pct,
+            feedback_message=feedback,
         )
 
     def _generate_lesson_quiz(self, vocabularies: list[VocabularyRead], count: int = 5) -> list[QuizQuestion]:

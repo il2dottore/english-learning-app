@@ -43,7 +43,49 @@
               "grammar_focus": "Stative vs Dynamic Verbs in Communication",
               "reading_topic": "The Evolution of Modern Friendship",
               "estimated_minutes": 15,
-              "xp": 60
+              "xp": 60,
+              "grammar_lesson": {
+                "concept": "Stative vs Dynamic Verbs in Interpersonal Communication",
+                "formula": "Subject + Stative Verb (Simple Form only) vs Subject + Dynamic Verb (Simple / Continuous)",
+                "rules": [
+                  "Động từ chỉ trạng thái cảm xúc, nhận thức (know, believe, understand, love) tuyệt đối không dùng thì tiếp diễn trong văn phong chuẩn.",
+                  "Một số động từ đa nghĩa (think, have, see, taste, feel) có thể vừa là Stative (quan điểm/sở hữu) vừa là Dynamic (hành động đang diễn ra).",
+                  "Trong giao tiếp học thuật, dùng Stative Verbs thể hiện sự khách quan, dứt khoát và đáng tin cậy của luận điểm."
+                ],
+                "contrast_examples": [
+                  {
+                    "incorrect": "I am understanding what you mean about our friendship.",
+                    "correct": "I understand what you mean about our friendship.",
+                    "explanation": "'Understand' là động từ trạng thái nhận thức, luôn chia ở thì đơn."
+                  },
+                  {
+                    "incorrect": "She is having a lot of respect for her peers.",
+                    "correct": "She has a lot of respect for her peers.",
+                    "explanation": "'Have' với nghĩa sở hữu/có thái độ là stative verb, không chia tiếp diễn."
+                  },
+                  {
+                    "basic": "I think this relationship is very important.",
+                    "advanced": "I am currently considering how to cultivate deeper interpersonal bonds.",
+                    "explanation": "Chuyển từ phát biểu ý kiến đơn thuần sang hành động suy ngẫm chủ động (Dynamic usage)."
+                  }
+                ]
+              },
+              "reading_passage": {
+                "title": "The Evolution of Modern Friendship and Social Bonds",
+                "passage": "In contemporary society, how humans cultivate and acknowledge interpersonal connections has undergone significant transformation. Sociologists observe that individuals must constantly adapt to diverse social circles while striving to achieve meaningful emotional depth. Rather than seeking to accommodate hundreds of superficial acquaintances, mature adults focus on friendships that absorb life's challenges and accurately reflect mutual core values. True camaraderie is not an abstract concept; it is an enduring achievement built upon mutual trust and sincere respect.",
+                "highlight_words": [
+                  "acknowledge",
+                  "adapt",
+                  "achieve",
+                  "accommodate",
+                  "absorb",
+                  "accurately",
+                  "abstract",
+                  "achievement"
+                ]
+              },
+              "passing_score_pct": 60,
+              "reward_xp": 60
             },
             {
               "id": "b2-u1-l2",
@@ -73,7 +115,42 @@
               "grammar_focus": "Expressing Habitual Actions (Used to vs Would)",
               "reading_topic": "Community Support in Urban Cities",
               "estimated_minutes": 15,
-              "xp": 60
+              "xp": 60,
+              "grammar_lesson": {
+                "concept": "Expressing Past Habits: 'Used to' vs 'Would' & 'Be/Get used to'",
+                "formula": "Past states/actions: S + used to + V-inf | Past repeated actions only: S + would + V-inf",
+                "rules": [
+                  "'Used to' diễn tả cả thói quen hành động trong quá khứ lẫn trạng thái trong quá khứ (past states) không còn đúng ở hiện tại.",
+                  "'Would' chỉ diễn tả các hành động lặp đi lặp lại mang tính hoài niệm, TUYỆT ĐỐI không dùng 'would' cho trạng thái (như live, be, have, believe).",
+                  "Phân biệt với 'be/get used to + V-ing/Noun' mang nghĩa quen với một môi trường hoặc thói quen mới."
+                ],
+                "contrast_examples": [
+                  {
+                    "incorrect": "When I was a child, I would live in a close-knit community.",
+                    "correct": "When I was a child, I used to live in a close-knit community.",
+                    "explanation": "'Live' là động từ trạng thái chỉ nơi cư trú, bắt buộc dùng 'used to', không dùng 'would'."
+                  },
+                  {
+                    "basic": "We often helped each other in the neighborhood every weekend.",
+                    "advanced": "Every Sunday, the residents would gather to support communal welfare initiatives.",
+                    "explanation": "Dùng 'would + gather' tạo sắc thái hoài niệm tao nhã chuẩn văn phong B2/C1."
+                  }
+                ]
+              },
+              "reading_passage": {
+                "title": "The Dynamics of Community Solidarity in Modern Metropolises",
+                "passage": "Rapid urbanization poses unique challenges to grassroots community coherence. Progressive city planners advocate for civic spaces that facilitate collective collaboration and foster social inclusion. When urban residents actively participate in local initiatives, they not only accomplish crucial neighborhood improvements but also acquire an acute sense of civic belonging. A resilient community does not merely exist; it is continuously maintained through intentional daily acts of solidarity and mutual assistance.",
+                "highlight_words": [
+                  "accomplish",
+                  "acquire",
+                  "advocate",
+                  "assistance",
+                  "belonging",
+                  "community"
+                ]
+              },
+              "passing_score_pct": 60,
+              "reward_xp": 60
             },
             {
               "id": "b2-u1-l3",
@@ -103,7 +180,41 @@
               "grammar_focus": "Comparative and Superlative Nuances",
               "reading_topic": "Changing Family Dynamics Globally",
               "estimated_minutes": 15,
-              "xp": 60
+              "xp": 60,
+              "grammar_lesson": {
+                "concept": "Comparative and Superlative Nuances",
+                "formula": "Cấu trúc trọng tâm: Comparative and Superlative Nuances",
+                "rules": [
+                  "Quy tắc 1: Nắm vững điều kiện áp dụng của cấu trúc 'Comparative and Superlative Nuances' trong ngữ cảnh văn bản học thuật.",
+                  "Quy tắc 2: Chú ý sự hòa hợp giữa chủ ngữ, thì và các trạng từ liên kết đi kèm.",
+                  "Quy tắc 3: Ứng dụng biến đổi câu linh hoạt để nâng cao tiêu chí Lexical Resource & Grammatical Range."
+                ],
+                "contrast_examples": [
+                  {
+                    "incorrect": "Incorrect usage of Comparative and Superlative Nuances without proper agreement.",
+                    "correct": "Accurate academic implementation of Comparative and Superlative Nuances.",
+                    "explanation": "Đảm bảo tuân thủ nguyên tắc ngữ pháp học thuật chuẩn Cambridge."
+                  },
+                  {
+                    "basic": "Diễn đạt cơ bản thường dùng các câu đơn ghép rời rạc.",
+                    "advanced": "Áp dụng cấu trúc Comparative and Superlative Nuances giúp câu văn mạch lạc, chặt chẽ và thuyết phục hơn.",
+                    "explanation": "Tạo ấn tượng mạnh trong bài thi IELTS Writing/Speaking hoặc Cambridge FCE/CAE."
+                  }
+                ]
+              },
+              "reading_passage": {
+                "title": "Changing Family Dynamics Globally",
+                "passage": "Understanding changing family dynamics globally requires a multidimensional perspective on human behavior and societal progress. Scholars emphasize that as global environments evolve, our capacity to analyze real-world scenarios becomes indispensable. By actively exploring these concepts, learners can establish solid foundations and contextualize critical knowledge effectively.",
+                "highlight_words": [
+                  "asset",
+                  "assign",
+                  "assistance",
+                  "assumption",
+                  "assure"
+                ]
+              },
+              "passing_score_pct": 60,
+              "reward_xp": 60
             },
             {
               "id": "b2-u1-l4",
@@ -133,7 +244,41 @@
               "grammar_focus": "Participial Adjectives (-ed vs -ing)",
               "reading_topic": "The Psychology of Human Empathy",
               "estimated_minutes": 15,
-              "xp": 60
+              "xp": 60,
+              "grammar_lesson": {
+                "concept": "Participial Adjectives (-ed vs -ing)",
+                "formula": "Cấu trúc trọng tâm: Participial Adjectives (-ed vs -ing)",
+                "rules": [
+                  "Quy tắc 1: Nắm vững điều kiện áp dụng của cấu trúc 'Participial Adjectives (-ed vs -ing)' trong ngữ cảnh văn bản học thuật.",
+                  "Quy tắc 2: Chú ý sự hòa hợp giữa chủ ngữ, thì và các trạng từ liên kết đi kèm.",
+                  "Quy tắc 3: Ứng dụng biến đổi câu linh hoạt để nâng cao tiêu chí Lexical Resource & Grammatical Range."
+                ],
+                "contrast_examples": [
+                  {
+                    "incorrect": "Incorrect usage of Participial Adjectives (-ed vs -ing) without proper agreement.",
+                    "correct": "Accurate academic implementation of Participial Adjectives (-ed vs -ing).",
+                    "explanation": "Đảm bảo tuân thủ nguyên tắc ngữ pháp học thuật chuẩn Cambridge."
+                  },
+                  {
+                    "basic": "Diễn đạt cơ bản thường dùng các câu đơn ghép rời rạc.",
+                    "advanced": "Áp dụng cấu trúc Participial Adjectives (-ed vs -ing) giúp câu văn mạch lạc, chặt chẽ và thuyết phục hơn.",
+                    "explanation": "Tạo ấn tượng mạnh trong bài thi IELTS Writing/Speaking hoặc Cambridge FCE/CAE."
+                  }
+                ]
+              },
+              "reading_passage": {
+                "title": "The Psychology of Human Empathy",
+                "passage": "Understanding the psychology of human empathy requires a multidimensional perspective on human behavior and societal progress. Scholars emphasize that as global environments evolve, our capacity to analyze real-world scenarios becomes indispensable. By actively exploring these concepts, learners can establish solid foundations and contextualize critical knowledge effectively.",
+                "highlight_words": [
+                  "bargain",
+                  "basement",
+                  "basket",
+                  "bat",
+                  "beneficial"
+                ]
+              },
+              "passing_score_pct": 60,
+              "reward_xp": 60
             }
           ]
         },
@@ -171,7 +316,41 @@
               "grammar_focus": "Passive Voice in Scientific Reporting",
               "reading_topic": "How AI is Reshaping Knowledge Work",
               "estimated_minutes": 15,
-              "xp": 60
+              "xp": 60,
+              "grammar_lesson": {
+                "concept": "Passive Voice in Scientific Reporting",
+                "formula": "Cấu trúc trọng tâm: Passive Voice in Scientific Reporting",
+                "rules": [
+                  "Quy tắc 1: Nắm vững điều kiện áp dụng của cấu trúc 'Passive Voice in Scientific Reporting' trong ngữ cảnh văn bản học thuật.",
+                  "Quy tắc 2: Chú ý sự hòa hợp giữa chủ ngữ, thì và các trạng từ liên kết đi kèm.",
+                  "Quy tắc 3: Ứng dụng biến đổi câu linh hoạt để nâng cao tiêu chí Lexical Resource & Grammatical Range."
+                ],
+                "contrast_examples": [
+                  {
+                    "incorrect": "Incorrect usage of Passive Voice in Scientific Reporting without proper agreement.",
+                    "correct": "Accurate academic implementation of Passive Voice in Scientific Reporting.",
+                    "explanation": "Đảm bảo tuân thủ nguyên tắc ngữ pháp học thuật chuẩn Cambridge."
+                  },
+                  {
+                    "basic": "Diễn đạt cơ bản thường dùng các câu đơn ghép rời rạc.",
+                    "advanced": "Áp dụng cấu trúc Passive Voice in Scientific Reporting giúp câu văn mạch lạc, chặt chẽ và thuyết phục hơn.",
+                    "explanation": "Tạo ấn tượng mạnh trong bài thi IELTS Writing/Speaking hoặc Cambridge FCE/CAE."
+                  }
+                ]
+              },
+              "reading_passage": {
+                "title": "How AI is Reshaping Knowledge Work",
+                "passage": "Understanding how ai is reshaping knowledge work requires a multidimensional perspective on human behavior and societal progress. Scholars emphasize that as global environments evolve, our capacity to analyze real-world scenarios becomes indispensable. By actively exploring these concepts, learners can establish solid foundations and contextualize critical knowledge effectively.",
+                "highlight_words": [
+                  "briefly",
+                  "broadcaster",
+                  "broadly",
+                  "bug",
+                  "cabin"
+                ]
+              },
+              "passing_score_pct": 60,
+              "reward_xp": 60
             },
             {
               "id": "b2-u2-l2",
@@ -201,7 +380,41 @@
               "grammar_focus": "Modal Verbs for Speculation & Deduction",
               "reading_topic": "The Next Frontier of Lunar Exploration",
               "estimated_minutes": 15,
-              "xp": 60
+              "xp": 60,
+              "grammar_lesson": {
+                "concept": "Modal Verbs for Speculation & Deduction",
+                "formula": "Cấu trúc trọng tâm: Modal Verbs for Speculation & Deduction",
+                "rules": [
+                  "Quy tắc 1: Nắm vững điều kiện áp dụng của cấu trúc 'Modal Verbs for Speculation & Deduction' trong ngữ cảnh văn bản học thuật.",
+                  "Quy tắc 2: Chú ý sự hòa hợp giữa chủ ngữ, thì và các trạng từ liên kết đi kèm.",
+                  "Quy tắc 3: Ứng dụng biến đổi câu linh hoạt để nâng cao tiêu chí Lexical Resource & Grammatical Range."
+                ],
+                "contrast_examples": [
+                  {
+                    "incorrect": "Incorrect usage of Modal Verbs for Speculation & Deduction without proper agreement.",
+                    "correct": "Accurate academic implementation of Modal Verbs for Speculation & Deduction.",
+                    "explanation": "Đảm bảo tuân thủ nguyên tắc ngữ pháp học thuật chuẩn Cambridge."
+                  },
+                  {
+                    "basic": "Diễn đạt cơ bản thường dùng các câu đơn ghép rời rạc.",
+                    "advanced": "Áp dụng cấu trúc Modal Verbs for Speculation & Deduction giúp câu văn mạch lạc, chặt chẽ và thuyết phục hơn.",
+                    "explanation": "Tạo ấn tượng mạnh trong bài thi IELTS Writing/Speaking hoặc Cambridge FCE/CAE."
+                  }
+                ]
+              },
+              "reading_passage": {
+                "title": "The Next Frontier of Lunar Exploration",
+                "passage": "Understanding the next frontier of lunar exploration requires a multidimensional perspective on human behavior and societal progress. Scholars emphasize that as global environments evolve, our capacity to analyze real-world scenarios becomes indispensable. By actively exploring these concepts, learners can establish solid foundations and contextualize critical knowledge effectively.",
+                "highlight_words": [
+                  "choir",
+                  "chop",
+                  "circuit",
+                  "civilization",
+                  "clarify"
+                ]
+              },
+              "passing_score_pct": 60,
+              "reward_xp": 60
             },
             {
               "id": "b2-u2-l3",
@@ -231,7 +444,41 @@
               "grammar_focus": "Future Continuous vs Future Perfect",
               "reading_topic": "Gene Editing and Healthcare Ethics",
               "estimated_minutes": 15,
-              "xp": 60
+              "xp": 60,
+              "grammar_lesson": {
+                "concept": "Future Continuous vs Future Perfect",
+                "formula": "Cấu trúc trọng tâm: Future Continuous vs Future Perfect",
+                "rules": [
+                  "Quy tắc 1: Nắm vững điều kiện áp dụng của cấu trúc 'Future Continuous vs Future Perfect' trong ngữ cảnh văn bản học thuật.",
+                  "Quy tắc 2: Chú ý sự hòa hợp giữa chủ ngữ, thì và các trạng từ liên kết đi kèm.",
+                  "Quy tắc 3: Ứng dụng biến đổi câu linh hoạt để nâng cao tiêu chí Lexical Resource & Grammatical Range."
+                ],
+                "contrast_examples": [
+                  {
+                    "incorrect": "Incorrect usage of Future Continuous vs Future Perfect without proper agreement.",
+                    "correct": "Accurate academic implementation of Future Continuous vs Future Perfect.",
+                    "explanation": "Đảm bảo tuân thủ nguyên tắc ngữ pháp học thuật chuẩn Cambridge."
+                  },
+                  {
+                    "basic": "Diễn đạt cơ bản thường dùng các câu đơn ghép rời rạc.",
+                    "advanced": "Áp dụng cấu trúc Future Continuous vs Future Perfect giúp câu văn mạch lạc, chặt chẽ và thuyết phục hơn.",
+                    "explanation": "Tạo ấn tượng mạnh trong bài thi IELTS Writing/Speaking hoặc Cambridge FCE/CAE."
+                  }
+                ]
+              },
+              "reading_passage": {
+                "title": "Gene Editing and Healthcare Ethics",
+                "passage": "Understanding gene editing and healthcare ethics requires a multidimensional perspective on human behavior and societal progress. Scholars emphasize that as global environments evolve, our capacity to analyze real-world scenarios becomes indispensable. By actively exploring these concepts, learners can establish solid foundations and contextualize critical knowledge effectively.",
+                "highlight_words": [
+                  "compose",
+                  "composer",
+                  "compound",
+                  "comprehensive",
+                  "comprise"
+                ]
+              },
+              "passing_score_pct": 60,
+              "reward_xp": 60
             },
             {
               "id": "b2-u2-l4",
@@ -261,7 +508,41 @@
               "grammar_focus": "Zero, First, and Second Conditionals",
               "reading_topic": "Protecting Digital Identity in 2026",
               "estimated_minutes": 15,
-              "xp": 60
+              "xp": 60,
+              "grammar_lesson": {
+                "concept": "Zero, First, and Second Conditionals",
+                "formula": "Cấu trúc trọng tâm: Zero, First, and Second Conditionals",
+                "rules": [
+                  "Quy tắc 1: Nắm vững điều kiện áp dụng của cấu trúc 'Zero, First, and Second Conditionals' trong ngữ cảnh văn bản học thuật.",
+                  "Quy tắc 2: Chú ý sự hòa hợp giữa chủ ngữ, thì và các trạng từ liên kết đi kèm.",
+                  "Quy tắc 3: Ứng dụng biến đổi câu linh hoạt để nâng cao tiêu chí Lexical Resource & Grammatical Range."
+                ],
+                "contrast_examples": [
+                  {
+                    "incorrect": "Incorrect usage of Zero, First, and Second Conditionals without proper agreement.",
+                    "correct": "Accurate academic implementation of Zero, First, and Second Conditionals.",
+                    "explanation": "Đảm bảo tuân thủ nguyên tắc ngữ pháp học thuật chuẩn Cambridge."
+                  },
+                  {
+                    "basic": "Diễn đạt cơ bản thường dùng các câu đơn ghép rời rạc.",
+                    "advanced": "Áp dụng cấu trúc Zero, First, and Second Conditionals giúp câu văn mạch lạc, chặt chẽ và thuyết phục hơn.",
+                    "explanation": "Tạo ấn tượng mạnh trong bài thi IELTS Writing/Speaking hoặc Cambridge FCE/CAE."
+                  }
+                ]
+              },
+              "reading_passage": {
+                "title": "Protecting Digital Identity in 2026",
+                "passage": "Understanding protecting digital identity in 2026 requires a multidimensional perspective on human behavior and societal progress. Scholars emphasize that as global environments evolve, our capacity to analyze real-world scenarios becomes indispensable. By actively exploring these concepts, learners can establish solid foundations and contextualize critical knowledge effectively.",
+                "highlight_words": [
+                  "controversial",
+                  "controversy",
+                  "convenience",
+                  "convention",
+                  "conventional"
+                ]
+              },
+              "passing_score_pct": 60,
+              "reward_xp": 60
             }
           ]
         },
@@ -299,7 +580,41 @@
               "grammar_focus": "Third Conditional for Past Regrets",
               "reading_topic": "Global Transitions to Green Energy",
               "estimated_minutes": 15,
-              "xp": 60
+              "xp": 60,
+              "grammar_lesson": {
+                "concept": "Third Conditional for Past Regrets",
+                "formula": "Cấu trúc trọng tâm: Third Conditional for Past Regrets",
+                "rules": [
+                  "Quy tắc 1: Nắm vững điều kiện áp dụng của cấu trúc 'Third Conditional for Past Regrets' trong ngữ cảnh văn bản học thuật.",
+                  "Quy tắc 2: Chú ý sự hòa hợp giữa chủ ngữ, thì và các trạng từ liên kết đi kèm.",
+                  "Quy tắc 3: Ứng dụng biến đổi câu linh hoạt để nâng cao tiêu chí Lexical Resource & Grammatical Range."
+                ],
+                "contrast_examples": [
+                  {
+                    "incorrect": "Incorrect usage of Third Conditional for Past Regrets without proper agreement.",
+                    "correct": "Accurate academic implementation of Third Conditional for Past Regrets.",
+                    "explanation": "Đảm bảo tuân thủ nguyên tắc ngữ pháp học thuật chuẩn Cambridge."
+                  },
+                  {
+                    "basic": "Diễn đạt cơ bản thường dùng các câu đơn ghép rời rạc.",
+                    "advanced": "Áp dụng cấu trúc Third Conditional for Past Regrets giúp câu văn mạch lạc, chặt chẽ và thuyết phục hơn.",
+                    "explanation": "Tạo ấn tượng mạnh trong bài thi IELTS Writing/Speaking hoặc Cambridge FCE/CAE."
+                  }
+                ]
+              },
+              "reading_passage": {
+                "title": "Global Transitions to Green Energy",
+                "passage": "Understanding global transitions to green energy requires a multidimensional perspective on human behavior and societal progress. Scholars emphasize that as global environments evolve, our capacity to analyze real-world scenarios becomes indispensable. By actively exploring these concepts, learners can establish solid foundations and contextualize critical knowledge effectively.",
+                "highlight_words": [
+                  "curious",
+                  "curriculum",
+                  "cute",
+                  "dairy",
+                  "dare"
+                ]
+              },
+              "passing_score_pct": 60,
+              "reward_xp": 60
             },
             {
               "id": "b2-u3-l2",
@@ -329,7 +644,41 @@
               "grammar_focus": "Relative Clauses: Defining vs Non-Defining",
               "reading_topic": "Preserving Marine and Forest Habitats",
               "estimated_minutes": 15,
-              "xp": 60
+              "xp": 60,
+              "grammar_lesson": {
+                "concept": "Relative Clauses: Defining vs Non-Defining",
+                "formula": "Cấu trúc trọng tâm: Relative Clauses: Defining vs Non-Defining",
+                "rules": [
+                  "Quy tắc 1: Nắm vững điều kiện áp dụng của cấu trúc 'Relative Clauses: Defining vs Non-Defining' trong ngữ cảnh văn bản học thuật.",
+                  "Quy tắc 2: Chú ý sự hòa hợp giữa chủ ngữ, thì và các trạng từ liên kết đi kèm.",
+                  "Quy tắc 3: Ứng dụng biến đổi câu linh hoạt để nâng cao tiêu chí Lexical Resource & Grammatical Range."
+                ],
+                "contrast_examples": [
+                  {
+                    "incorrect": "Incorrect usage of Relative Clauses: Defining vs Non-Defining without proper agreement.",
+                    "correct": "Accurate academic implementation of Relative Clauses: Defining vs Non-Defining.",
+                    "explanation": "Đảm bảo tuân thủ nguyên tắc ngữ pháp học thuật chuẩn Cambridge."
+                  },
+                  {
+                    "basic": "Diễn đạt cơ bản thường dùng các câu đơn ghép rời rạc.",
+                    "advanced": "Áp dụng cấu trúc Relative Clauses: Defining vs Non-Defining giúp câu văn mạch lạc, chặt chẽ và thuyết phục hơn.",
+                    "explanation": "Tạo ấn tượng mạnh trong bài thi IELTS Writing/Speaking hoặc Cambridge FCE/CAE."
+                  }
+                ]
+              },
+              "reading_passage": {
+                "title": "Preserving Marine and Forest Habitats",
+                "passage": "Understanding preserving marine and forest habitats requires a multidimensional perspective on human behavior and societal progress. Scholars emphasize that as global environments evolve, our capacity to analyze real-world scenarios becomes indispensable. By actively exploring these concepts, learners can establish solid foundations and contextualize critical knowledge effectively.",
+                "highlight_words": [
+                  "deposit",
+                  "depression",
+                  "derive",
+                  "desperately",
+                  "destruction"
+                ]
+              },
+              "passing_score_pct": 60,
+              "reward_xp": 60
             },
             {
               "id": "b2-u3-l3",
@@ -359,7 +708,41 @@
               "grammar_focus": "Prepositions after Verbs and Adjectives",
               "reading_topic": "Solar and Wind Power Grid Innovations",
               "estimated_minutes": 15,
-              "xp": 60
+              "xp": 60,
+              "grammar_lesson": {
+                "concept": "Prepositions after Verbs and Adjectives",
+                "formula": "Cấu trúc trọng tâm: Prepositions after Verbs and Adjectives",
+                "rules": [
+                  "Quy tắc 1: Nắm vững điều kiện áp dụng của cấu trúc 'Prepositions after Verbs and Adjectives' trong ngữ cảnh văn bản học thuật.",
+                  "Quy tắc 2: Chú ý sự hòa hợp giữa chủ ngữ, thì và các trạng từ liên kết đi kèm.",
+                  "Quy tắc 3: Ứng dụng biến đổi câu linh hoạt để nâng cao tiêu chí Lexical Resource & Grammatical Range."
+                ],
+                "contrast_examples": [
+                  {
+                    "incorrect": "Incorrect usage of Prepositions after Verbs and Adjectives without proper agreement.",
+                    "correct": "Accurate academic implementation of Prepositions after Verbs and Adjectives.",
+                    "explanation": "Đảm bảo tuân thủ nguyên tắc ngữ pháp học thuật chuẩn Cambridge."
+                  },
+                  {
+                    "basic": "Diễn đạt cơ bản thường dùng các câu đơn ghép rời rạc.",
+                    "advanced": "Áp dụng cấu trúc Prepositions after Verbs and Adjectives giúp câu văn mạch lạc, chặt chẽ và thuyết phục hơn.",
+                    "explanation": "Tạo ấn tượng mạnh trong bài thi IELTS Writing/Speaking hoặc Cambridge FCE/CAE."
+                  }
+                ]
+              },
+              "reading_passage": {
+                "title": "Solar and Wind Power Grid Innovations",
+                "passage": "Understanding solar and wind power grid innovations requires a multidimensional perspective on human behavior and societal progress. Scholars emphasize that as global environments evolve, our capacity to analyze real-world scenarios becomes indispensable. By actively exploring these concepts, learners can establish solid foundations and contextualize critical knowledge effectively.",
+                "highlight_words": [
+                  "distract",
+                  "disturb",
+                  "dive",
+                  "diverse",
+                  "diversity"
+                ]
+              },
+              "passing_score_pct": 60,
+              "reward_xp": 60
             },
             {
               "id": "b2-u3-l4",
@@ -389,7 +772,41 @@
               "grammar_focus": "Causative Verbs (Have/Get something done)",
               "reading_topic": "Designing Zero-Emission Smart Cities",
               "estimated_minutes": 15,
-              "xp": 60
+              "xp": 60,
+              "grammar_lesson": {
+                "concept": "Causative Verbs (Have/Get something done)",
+                "formula": "Cấu trúc trọng tâm: Causative Verbs (Have/Get something done)",
+                "rules": [
+                  "Quy tắc 1: Nắm vững điều kiện áp dụng của cấu trúc 'Causative Verbs (Have/Get something done)' trong ngữ cảnh văn bản học thuật.",
+                  "Quy tắc 2: Chú ý sự hòa hợp giữa chủ ngữ, thì và các trạng từ liên kết đi kèm.",
+                  "Quy tắc 3: Ứng dụng biến đổi câu linh hoạt để nâng cao tiêu chí Lexical Resource & Grammatical Range."
+                ],
+                "contrast_examples": [
+                  {
+                    "incorrect": "Incorrect usage of Causative Verbs (Have/Get something done) without proper agreement.",
+                    "correct": "Accurate academic implementation of Causative Verbs (Have/Get something done).",
+                    "explanation": "Đảm bảo tuân thủ nguyên tắc ngữ pháp học thuật chuẩn Cambridge."
+                  },
+                  {
+                    "basic": "Diễn đạt cơ bản thường dùng các câu đơn ghép rời rạc.",
+                    "advanced": "Áp dụng cấu trúc Causative Verbs (Have/Get something done) giúp câu văn mạch lạc, chặt chẽ và thuyết phục hơn.",
+                    "explanation": "Tạo ấn tượng mạnh trong bài thi IELTS Writing/Speaking hoặc Cambridge FCE/CAE."
+                  }
+                ]
+              },
+              "reading_passage": {
+                "title": "Designing Zero-Emission Smart Cities",
+                "passage": "Understanding designing zero-emission smart cities requires a multidimensional perspective on human behavior and societal progress. Scholars emphasize that as global environments evolve, our capacity to analyze real-world scenarios becomes indispensable. By actively exploring these concepts, learners can establish solid foundations and contextualize critical knowledge effectively.",
+                "highlight_words": [
+                  "editorial",
+                  "efficiently",
+                  "elbow",
+                  "electronics",
+                  "elegant"
+                ]
+              },
+              "passing_score_pct": 60,
+              "reward_xp": 60
             }
           ]
         },
@@ -427,7 +844,41 @@
               "grammar_focus": "Gerunds vs Infinitives in Professional Context",
               "reading_topic": "The Remote and Hybrid Work Revolution",
               "estimated_minutes": 15,
-              "xp": 60
+              "xp": 60,
+              "grammar_lesson": {
+                "concept": "Gerunds vs Infinitives in Professional Context",
+                "formula": "Cấu trúc trọng tâm: Gerunds vs Infinitives in Professional Context",
+                "rules": [
+                  "Quy tắc 1: Nắm vững điều kiện áp dụng của cấu trúc 'Gerunds vs Infinitives in Professional Context' trong ngữ cảnh văn bản học thuật.",
+                  "Quy tắc 2: Chú ý sự hòa hợp giữa chủ ngữ, thì và các trạng từ liên kết đi kèm.",
+                  "Quy tắc 3: Ứng dụng biến đổi câu linh hoạt để nâng cao tiêu chí Lexical Resource & Grammatical Range."
+                ],
+                "contrast_examples": [
+                  {
+                    "incorrect": "Incorrect usage of Gerunds vs Infinitives in Professional Context without proper agreement.",
+                    "correct": "Accurate academic implementation of Gerunds vs Infinitives in Professional Context.",
+                    "explanation": "Đảm bảo tuân thủ nguyên tắc ngữ pháp học thuật chuẩn Cambridge."
+                  },
+                  {
+                    "basic": "Diễn đạt cơ bản thường dùng các câu đơn ghép rời rạc.",
+                    "advanced": "Áp dụng cấu trúc Gerunds vs Infinitives in Professional Context giúp câu văn mạch lạc, chặt chẽ và thuyết phục hơn.",
+                    "explanation": "Tạo ấn tượng mạnh trong bài thi IELTS Writing/Speaking hoặc Cambridge FCE/CAE."
+                  }
+                ]
+              },
+              "reading_passage": {
+                "title": "The Remote and Hybrid Work Revolution",
+                "passage": "Understanding the remote and hybrid work revolution requires a multidimensional perspective on human behavior and societal progress. Scholars emphasize that as global environments evolve, our capacity to analyze real-world scenarios becomes indispensable. By actively exploring these concepts, learners can establish solid foundations and contextualize critical knowledge effectively.",
+                "highlight_words": [
+                  "erupt",
+                  "essentially",
+                  "ethic",
+                  "ethnic",
+                  "evaluation"
+                ]
+              },
+              "passing_score_pct": 60,
+              "reward_xp": 60
             },
             {
               "id": "b2-u4-l2",
@@ -457,7 +908,41 @@
               "grammar_focus": "Reported Speech and Reporting Verbs",
               "reading_topic": "Funding and Scaling Sustainable Ventures",
               "estimated_minutes": 15,
-              "xp": 60
+              "xp": 60,
+              "grammar_lesson": {
+                "concept": "Reported Speech and Reporting Verbs",
+                "formula": "Cấu trúc trọng tâm: Reported Speech and Reporting Verbs",
+                "rules": [
+                  "Quy tắc 1: Nắm vững điều kiện áp dụng của cấu trúc 'Reported Speech and Reporting Verbs' trong ngữ cảnh văn bản học thuật.",
+                  "Quy tắc 2: Chú ý sự hòa hợp giữa chủ ngữ, thì và các trạng từ liên kết đi kèm.",
+                  "Quy tắc 3: Ứng dụng biến đổi câu linh hoạt để nâng cao tiêu chí Lexical Resource & Grammatical Range."
+                ],
+                "contrast_examples": [
+                  {
+                    "incorrect": "Incorrect usage of Reported Speech and Reporting Verbs without proper agreement.",
+                    "correct": "Accurate academic implementation of Reported Speech and Reporting Verbs.",
+                    "explanation": "Đảm bảo tuân thủ nguyên tắc ngữ pháp học thuật chuẩn Cambridge."
+                  },
+                  {
+                    "basic": "Diễn đạt cơ bản thường dùng các câu đơn ghép rời rạc.",
+                    "advanced": "Áp dụng cấu trúc Reported Speech and Reporting Verbs giúp câu văn mạch lạc, chặt chẽ và thuyết phục hơn.",
+                    "explanation": "Tạo ấn tượng mạnh trong bài thi IELTS Writing/Speaking hoặc Cambridge FCE/CAE."
+                  }
+                ]
+              },
+              "reading_passage": {
+                "title": "Funding and Scaling Sustainable Ventures",
+                "passage": "Understanding funding and scaling sustainable ventures requires a multidimensional perspective on human behavior and societal progress. Scholars emphasize that as global environments evolve, our capacity to analyze real-world scenarios becomes indispensable. By actively exploring these concepts, learners can establish solid foundations and contextualize critical knowledge effectively.",
+                "highlight_words": [
+                  "exposure",
+                  "extension",
+                  "extensive",
+                  "extensively",
+                  "extract"
+                ]
+              },
+              "passing_score_pct": 60,
+              "reward_xp": 60
             },
             {
               "id": "b2-u4-l3",
@@ -487,7 +972,41 @@
               "grammar_focus": "Phrasal Verbs with Multiple Meanings",
               "reading_topic": "Personal Finance for Modern Professionals",
               "estimated_minutes": 15,
-              "xp": 60
+              "xp": 60,
+              "grammar_lesson": {
+                "concept": "Phrasal Verbs with Multiple Meanings",
+                "formula": "Cấu trúc trọng tâm: Phrasal Verbs with Multiple Meanings",
+                "rules": [
+                  "Quy tắc 1: Nắm vững điều kiện áp dụng của cấu trúc 'Phrasal Verbs with Multiple Meanings' trong ngữ cảnh văn bản học thuật.",
+                  "Quy tắc 2: Chú ý sự hòa hợp giữa chủ ngữ, thì và các trạng từ liên kết đi kèm.",
+                  "Quy tắc 3: Ứng dụng biến đổi câu linh hoạt để nâng cao tiêu chí Lexical Resource & Grammatical Range."
+                ],
+                "contrast_examples": [
+                  {
+                    "incorrect": "Incorrect usage of Phrasal Verbs with Multiple Meanings without proper agreement.",
+                    "correct": "Accurate academic implementation of Phrasal Verbs with Multiple Meanings.",
+                    "explanation": "Đảm bảo tuân thủ nguyên tắc ngữ pháp học thuật chuẩn Cambridge."
+                  },
+                  {
+                    "basic": "Diễn đạt cơ bản thường dùng các câu đơn ghép rời rạc.",
+                    "advanced": "Áp dụng cấu trúc Phrasal Verbs with Multiple Meanings giúp câu văn mạch lạc, chặt chẽ và thuyết phục hơn.",
+                    "explanation": "Tạo ấn tượng mạnh trong bài thi IELTS Writing/Speaking hoặc Cambridge FCE/CAE."
+                  }
+                ]
+              },
+              "reading_passage": {
+                "title": "Personal Finance for Modern Professionals",
+                "passage": "Understanding personal finance for modern professionals requires a multidimensional perspective on human behavior and societal progress. Scholars emphasize that as global environments evolve, our capacity to analyze real-world scenarios becomes indispensable. By actively exploring these concepts, learners can establish solid foundations and contextualize critical knowledge effectively.",
+                "highlight_words": [
+                  "flavour",
+                  "fond",
+                  "fool",
+                  "forbid",
+                  "forecast"
+                ]
+              },
+              "passing_score_pct": 60,
+              "reward_xp": 60
             },
             {
               "id": "b2-u4-l4",
@@ -517,7 +1036,41 @@
               "grammar_focus": "Wishes and Hypotheses (Wish / If only)",
               "reading_topic": "Empathetic Leadership in Tech Teams",
               "estimated_minutes": 15,
-              "xp": 60
+              "xp": 60,
+              "grammar_lesson": {
+                "concept": "Wishes and Hypotheses (Wish / If only)",
+                "formula": "Cấu trúc trọng tâm: Wishes and Hypotheses (Wish / If only)",
+                "rules": [
+                  "Quy tắc 1: Nắm vững điều kiện áp dụng của cấu trúc 'Wishes and Hypotheses (Wish / If only)' trong ngữ cảnh văn bản học thuật.",
+                  "Quy tắc 2: Chú ý sự hòa hợp giữa chủ ngữ, thì và các trạng từ liên kết đi kèm.",
+                  "Quy tắc 3: Ứng dụng biến đổi câu linh hoạt để nâng cao tiêu chí Lexical Resource & Grammatical Range."
+                ],
+                "contrast_examples": [
+                  {
+                    "incorrect": "Incorrect usage of Wishes and Hypotheses (Wish / If only) without proper agreement.",
+                    "correct": "Accurate academic implementation of Wishes and Hypotheses (Wish / If only).",
+                    "explanation": "Đảm bảo tuân thủ nguyên tắc ngữ pháp học thuật chuẩn Cambridge."
+                  },
+                  {
+                    "basic": "Diễn đạt cơ bản thường dùng các câu đơn ghép rời rạc.",
+                    "advanced": "Áp dụng cấu trúc Wishes and Hypotheses (Wish / If only) giúp câu văn mạch lạc, chặt chẽ và thuyết phục hơn.",
+                    "explanation": "Tạo ấn tượng mạnh trong bài thi IELTS Writing/Speaking hoặc Cambridge FCE/CAE."
+                  }
+                ]
+              },
+              "reading_passage": {
+                "title": "Empathetic Leadership in Tech Teams",
+                "passage": "Understanding empathetic leadership in tech teams requires a multidimensional perspective on human behavior and societal progress. Scholars emphasize that as global environments evolve, our capacity to analyze real-world scenarios becomes indispensable. By actively exploring these concepts, learners can establish solid foundations and contextualize critical knowledge effectively.",
+                "highlight_words": [
+                  "frequent",
+                  "fulfil",
+                  "full-time",
+                  "fundamentally",
+                  "furious"
+                ]
+              },
+              "passing_score_pct": 60,
+              "reward_xp": 60
             }
           ]
         },
@@ -555,7 +1108,41 @@
               "grammar_focus": "Articles: Definite, Indefinite, and Zero Article",
               "reading_topic": "Sustainable Tourism in Fragile Ecosystems",
               "estimated_minutes": 15,
-              "xp": 60
+              "xp": 60,
+              "grammar_lesson": {
+                "concept": "Articles: Definite, Indefinite, and Zero Article",
+                "formula": "Cấu trúc trọng tâm: Articles: Definite, Indefinite, and Zero Article",
+                "rules": [
+                  "Quy tắc 1: Nắm vững điều kiện áp dụng của cấu trúc 'Articles: Definite, Indefinite, and Zero Article' trong ngữ cảnh văn bản học thuật.",
+                  "Quy tắc 2: Chú ý sự hòa hợp giữa chủ ngữ, thì và các trạng từ liên kết đi kèm.",
+                  "Quy tắc 3: Ứng dụng biến đổi câu linh hoạt để nâng cao tiêu chí Lexical Resource & Grammatical Range."
+                ],
+                "contrast_examples": [
+                  {
+                    "incorrect": "Incorrect usage of Articles: Definite, Indefinite, and Zero Article without proper agreement.",
+                    "correct": "Accurate academic implementation of Articles: Definite, Indefinite, and Zero Article.",
+                    "explanation": "Đảm bảo tuân thủ nguyên tắc ngữ pháp học thuật chuẩn Cambridge."
+                  },
+                  {
+                    "basic": "Diễn đạt cơ bản thường dùng các câu đơn ghép rời rạc.",
+                    "advanced": "Áp dụng cấu trúc Articles: Definite, Indefinite, and Zero Article giúp câu văn mạch lạc, chặt chẽ và thuyết phục hơn.",
+                    "explanation": "Tạo ấn tượng mạnh trong bài thi IELTS Writing/Speaking hoặc Cambridge FCE/CAE."
+                  }
+                ]
+              },
+              "reading_passage": {
+                "title": "Sustainable Tourism in Fragile Ecosystems",
+                "passage": "Understanding sustainable tourism in fragile ecosystems requires a multidimensional perspective on human behavior and societal progress. Scholars emphasize that as global environments evolve, our capacity to analyze real-world scenarios becomes indispensable. By actively exploring these concepts, learners can establish solid foundations and contextualize critical knowledge effectively.",
+                "highlight_words": [
+                  "goodness",
+                  "gorgeous",
+                  "governor",
+                  "graphic",
+                  "graphics"
+                ]
+              },
+              "passing_score_pct": 60,
+              "reward_xp": 60
             },
             {
               "id": "b2-u5-l2",
@@ -585,7 +1172,41 @@
               "grammar_focus": "Adverbial Clauses of Contrast and Concession",
               "reading_topic": "The Preservation of Ancient Culinary Arts",
               "estimated_minutes": 15,
-              "xp": 60
+              "xp": 60,
+              "grammar_lesson": {
+                "concept": "Adverbial Clauses of Contrast and Concession",
+                "formula": "Cấu trúc trọng tâm: Adverbial Clauses of Contrast and Concession",
+                "rules": [
+                  "Quy tắc 1: Nắm vững điều kiện áp dụng của cấu trúc 'Adverbial Clauses of Contrast and Concession' trong ngữ cảnh văn bản học thuật.",
+                  "Quy tắc 2: Chú ý sự hòa hợp giữa chủ ngữ, thì và các trạng từ liên kết đi kèm.",
+                  "Quy tắc 3: Ứng dụng biến đổi câu linh hoạt để nâng cao tiêu chí Lexical Resource & Grammatical Range."
+                ],
+                "contrast_examples": [
+                  {
+                    "incorrect": "Incorrect usage of Adverbial Clauses of Contrast and Concession without proper agreement.",
+                    "correct": "Accurate academic implementation of Adverbial Clauses of Contrast and Concession.",
+                    "explanation": "Đảm bảo tuân thủ nguyên tắc ngữ pháp học thuật chuẩn Cambridge."
+                  },
+                  {
+                    "basic": "Diễn đạt cơ bản thường dùng các câu đơn ghép rời rạc.",
+                    "advanced": "Áp dụng cấu trúc Adverbial Clauses of Contrast and Concession giúp câu văn mạch lạc, chặt chẽ và thuyết phục hơn.",
+                    "explanation": "Tạo ấn tượng mạnh trong bài thi IELTS Writing/Speaking hoặc Cambridge FCE/CAE."
+                  }
+                ]
+              },
+              "reading_passage": {
+                "title": "The Preservation of Ancient Culinary Arts",
+                "passage": "Understanding the preservation of ancient culinary arts requires a multidimensional perspective on human behavior and societal progress. Scholars emphasize that as global environments evolve, our capacity to analyze real-world scenarios becomes indispensable. By actively exploring these concepts, learners can establish solid foundations and contextualize critical knowledge effectively.",
+                "highlight_words": [
+                  "highway",
+                  "hilarious",
+                  "hip",
+                  "historian",
+                  "homeless"
+                ]
+              },
+              "passing_score_pct": 60,
+              "reward_xp": 60
             },
             {
               "id": "b2-u5-l3",
@@ -615,7 +1236,41 @@
               "grammar_focus": "Inversion with Little, Never, Rarely",
               "reading_topic": "Traditional Festivals in a Globalized Era",
               "estimated_minutes": 15,
-              "xp": 60
+              "xp": 60,
+              "grammar_lesson": {
+                "concept": "Inversion with Little, Never, Rarely",
+                "formula": "Cấu trúc trọng tâm: Inversion with Little, Never, Rarely",
+                "rules": [
+                  "Quy tắc 1: Nắm vững điều kiện áp dụng của cấu trúc 'Inversion with Little, Never, Rarely' trong ngữ cảnh văn bản học thuật.",
+                  "Quy tắc 2: Chú ý sự hòa hợp giữa chủ ngữ, thì và các trạng từ liên kết đi kèm.",
+                  "Quy tắc 3: Ứng dụng biến đổi câu linh hoạt để nâng cao tiêu chí Lexical Resource & Grammatical Range."
+                ],
+                "contrast_examples": [
+                  {
+                    "incorrect": "Incorrect usage of Inversion with Little, Never, Rarely without proper agreement.",
+                    "correct": "Accurate academic implementation of Inversion with Little, Never, Rarely.",
+                    "explanation": "Đảm bảo tuân thủ nguyên tắc ngữ pháp học thuật chuẩn Cambridge."
+                  },
+                  {
+                    "basic": "Diễn đạt cơ bản thường dùng các câu đơn ghép rời rạc.",
+                    "advanced": "Áp dụng cấu trúc Inversion with Little, Never, Rarely giúp câu văn mạch lạc, chặt chẽ và thuyết phục hơn.",
+                    "explanation": "Tạo ấn tượng mạnh trong bài thi IELTS Writing/Speaking hoặc Cambridge FCE/CAE."
+                  }
+                ]
+              },
+              "reading_passage": {
+                "title": "Traditional Festivals in a Globalized Era",
+                "passage": "Understanding traditional festivals in a globalized era requires a multidimensional perspective on human behavior and societal progress. Scholars emphasize that as global environments evolve, our capacity to analyze real-world scenarios becomes indispensable. By actively exploring these concepts, learners can establish solid foundations and contextualize critical knowledge effectively.",
+                "highlight_words": [
+                  "incentive",
+                  "incorporate",
+                  "incorrect",
+                  "independence",
+                  "index"
+                ]
+              },
+              "passing_score_pct": 60,
+              "reward_xp": 60
             },
             {
               "id": "b2-u5-l4",
@@ -645,7 +1300,41 @@
               "grammar_focus": "Question Tags and Echo Questions",
               "reading_topic": "Preserving Endangered Indigenous Languages",
               "estimated_minutes": 15,
-              "xp": 60
+              "xp": 60,
+              "grammar_lesson": {
+                "concept": "Question Tags and Echo Questions",
+                "formula": "Cấu trúc trọng tâm: Question Tags and Echo Questions",
+                "rules": [
+                  "Quy tắc 1: Nắm vững điều kiện áp dụng của cấu trúc 'Question Tags and Echo Questions' trong ngữ cảnh văn bản học thuật.",
+                  "Quy tắc 2: Chú ý sự hòa hợp giữa chủ ngữ, thì và các trạng từ liên kết đi kèm.",
+                  "Quy tắc 3: Ứng dụng biến đổi câu linh hoạt để nâng cao tiêu chí Lexical Resource & Grammatical Range."
+                ],
+                "contrast_examples": [
+                  {
+                    "incorrect": "Incorrect usage of Question Tags and Echo Questions without proper agreement.",
+                    "correct": "Accurate academic implementation of Question Tags and Echo Questions.",
+                    "explanation": "Đảm bảo tuân thủ nguyên tắc ngữ pháp học thuật chuẩn Cambridge."
+                  },
+                  {
+                    "basic": "Diễn đạt cơ bản thường dùng các câu đơn ghép rời rạc.",
+                    "advanced": "Áp dụng cấu trúc Question Tags and Echo Questions giúp câu văn mạch lạc, chặt chẽ và thuyết phục hơn.",
+                    "explanation": "Tạo ấn tượng mạnh trong bài thi IELTS Writing/Speaking hoặc Cambridge FCE/CAE."
+                  }
+                ]
+              },
+              "reading_passage": {
+                "title": "Preserving Endangered Indigenous Languages",
+                "passage": "Understanding preserving endangered indigenous languages requires a multidimensional perspective on human behavior and societal progress. Scholars emphasize that as global environments evolve, our capacity to analyze real-world scenarios becomes indispensable. By actively exploring these concepts, learners can establish solid foundations and contextualize critical knowledge effectively.",
+                "highlight_words": [
+                  "insert",
+                  "inspector",
+                  "installation",
+                  "instant",
+                  "instantly"
+                ]
+              },
+              "passing_score_pct": 60,
+              "reward_xp": 60
             }
           ]
         },
@@ -683,7 +1372,41 @@
               "grammar_focus": "Passive with Reporting Verbs (It is thought that...)",
               "reading_topic": "Fighting Misinformation in Modern Media",
               "estimated_minutes": 15,
-              "xp": 60
+              "xp": 60,
+              "grammar_lesson": {
+                "concept": "Passive with Reporting Verbs (It is thought that...)",
+                "formula": "Cấu trúc trọng tâm: Passive with Reporting Verbs (It is thought that...)",
+                "rules": [
+                  "Quy tắc 1: Nắm vững điều kiện áp dụng của cấu trúc 'Passive with Reporting Verbs (It is thought that...)' trong ngữ cảnh văn bản học thuật.",
+                  "Quy tắc 2: Chú ý sự hòa hợp giữa chủ ngữ, thì và các trạng từ liên kết đi kèm.",
+                  "Quy tắc 3: Ứng dụng biến đổi câu linh hoạt để nâng cao tiêu chí Lexical Resource & Grammatical Range."
+                ],
+                "contrast_examples": [
+                  {
+                    "incorrect": "Incorrect usage of Passive with Reporting Verbs (It is thought that...) without proper agreement.",
+                    "correct": "Accurate academic implementation of Passive with Reporting Verbs (It is thought that...).",
+                    "explanation": "Đảm bảo tuân thủ nguyên tắc ngữ pháp học thuật chuẩn Cambridge."
+                  },
+                  {
+                    "basic": "Diễn đạt cơ bản thường dùng các câu đơn ghép rời rạc.",
+                    "advanced": "Áp dụng cấu trúc Passive with Reporting Verbs (It is thought that...) giúp câu văn mạch lạc, chặt chẽ và thuyết phục hơn.",
+                    "explanation": "Tạo ấn tượng mạnh trong bài thi IELTS Writing/Speaking hoặc Cambridge FCE/CAE."
+                  }
+                ]
+              },
+              "reading_passage": {
+                "title": "Fighting Misinformation in Modern Media",
+                "passage": "Understanding fighting misinformation in modern media requires a multidimensional perspective on human behavior and societal progress. Scholars emphasize that as global environments evolve, our capacity to analyze real-world scenarios becomes indispensable. By actively exploring these concepts, learners can establish solid foundations and contextualize critical knowledge effectively.",
+                "highlight_words": [
+                  "joint",
+                  "journalism",
+                  "jury",
+                  "kit",
+                  "ladder"
+                ]
+              },
+              "passing_score_pct": 60,
+              "reward_xp": 60
             },
             {
               "id": "b2-u6-l2",
@@ -713,7 +1436,41 @@
               "grammar_focus": "Emphatic Structures with What and It",
               "reading_topic": "Modernist Architecture and Public Spaces",
               "estimated_minutes": 15,
-              "xp": 60
+              "xp": 60,
+              "grammar_lesson": {
+                "concept": "Emphatic Structures with What and It",
+                "formula": "Cấu trúc trọng tâm: Emphatic Structures with What and It",
+                "rules": [
+                  "Quy tắc 1: Nắm vững điều kiện áp dụng của cấu trúc 'Emphatic Structures with What and It' trong ngữ cảnh văn bản học thuật.",
+                  "Quy tắc 2: Chú ý sự hòa hợp giữa chủ ngữ, thì và các trạng từ liên kết đi kèm.",
+                  "Quy tắc 3: Ứng dụng biến đổi câu linh hoạt để nâng cao tiêu chí Lexical Resource & Grammatical Range."
+                ],
+                "contrast_examples": [
+                  {
+                    "incorrect": "Incorrect usage of Emphatic Structures with What and It without proper agreement.",
+                    "correct": "Accurate academic implementation of Emphatic Structures with What and It.",
+                    "explanation": "Đảm bảo tuân thủ nguyên tắc ngữ pháp học thuật chuẩn Cambridge."
+                  },
+                  {
+                    "basic": "Diễn đạt cơ bản thường dùng các câu đơn ghép rời rạc.",
+                    "advanced": "Áp dụng cấu trúc Emphatic Structures with What and It giúp câu văn mạch lạc, chặt chẽ và thuyết phục hơn.",
+                    "explanation": "Tạo ấn tượng mạnh trong bài thi IELTS Writing/Speaking hoặc Cambridge FCE/CAE."
+                  }
+                ]
+              },
+              "reading_passage": {
+                "title": "Modernist Architecture and Public Spaces",
+                "passage": "Understanding modernist architecture and public spaces requires a multidimensional perspective on human behavior and societal progress. Scholars emphasize that as global environments evolve, our capacity to analyze real-world scenarios becomes indispensable. By actively exploring these concepts, learners can establish solid foundations and contextualize critical knowledge effectively.",
+                "highlight_words": [
+                  "litter",
+                  "logo",
+                  "lottery",
+                  "loyal",
+                  "lyric"
+                ]
+              },
+              "passing_score_pct": 60,
+              "reward_xp": 60
             },
             {
               "id": "b2-u6-l3",
@@ -743,7 +1500,41 @@
               "grammar_focus": "Mixed Conditionals (Type 2 and 3 Combinations)",
               "reading_topic": "The Art of Screenwriting in Global Cinema",
               "estimated_minutes": 15,
-              "xp": 60
+              "xp": 60,
+              "grammar_lesson": {
+                "concept": "Mixed Conditionals (Type 2 and 3 Combinations)",
+                "formula": "Cấu trúc trọng tâm: Mixed Conditionals (Type 2 and 3 Combinations)",
+                "rules": [
+                  "Quy tắc 1: Nắm vững điều kiện áp dụng của cấu trúc 'Mixed Conditionals (Type 2 and 3 Combinations)' trong ngữ cảnh văn bản học thuật.",
+                  "Quy tắc 2: Chú ý sự hòa hợp giữa chủ ngữ, thì và các trạng từ liên kết đi kèm.",
+                  "Quy tắc 3: Ứng dụng biến đổi câu linh hoạt để nâng cao tiêu chí Lexical Resource & Grammatical Range."
+                ],
+                "contrast_examples": [
+                  {
+                    "incorrect": "Incorrect usage of Mixed Conditionals (Type 2 and 3 Combinations) without proper agreement.",
+                    "correct": "Accurate academic implementation of Mixed Conditionals (Type 2 and 3 Combinations).",
+                    "explanation": "Đảm bảo tuân thủ nguyên tắc ngữ pháp học thuật chuẩn Cambridge."
+                  },
+                  {
+                    "basic": "Diễn đạt cơ bản thường dùng các câu đơn ghép rời rạc.",
+                    "advanced": "Áp dụng cấu trúc Mixed Conditionals (Type 2 and 3 Combinations) giúp câu văn mạch lạc, chặt chẽ và thuyết phục hơn.",
+                    "explanation": "Tạo ấn tượng mạnh trong bài thi IELTS Writing/Speaking hoặc Cambridge FCE/CAE."
+                  }
+                ]
+              },
+              "reading_passage": {
+                "title": "The Art of Screenwriting in Global Cinema",
+                "passage": "Understanding the art of screenwriting in global cinema requires a multidimensional perspective on human behavior and societal progress. Scholars emphasize that as global environments evolve, our capacity to analyze real-world scenarios becomes indispensable. By actively exploring these concepts, learners can establish solid foundations and contextualize critical knowledge effectively.",
+                "highlight_words": [
+                  "mechanism",
+                  "medal",
+                  "medication",
+                  "membership",
+                  "memorable"
+                ]
+              },
+              "passing_score_pct": 60,
+              "reward_xp": 60
             },
             {
               "id": "b2-u6-l4",
@@ -773,7 +1564,41 @@
               "grammar_focus": "Subjunctive Mood in Formal Recommendations",
               "reading_topic": "The Creative Process in Symphony Composition",
               "estimated_minutes": 15,
-              "xp": 60
+              "xp": 60,
+              "grammar_lesson": {
+                "concept": "Subjunctive Mood in Formal Recommendations",
+                "formula": "Cấu trúc trọng tâm: Subjunctive Mood in Formal Recommendations",
+                "rules": [
+                  "Quy tắc 1: Nắm vững điều kiện áp dụng của cấu trúc 'Subjunctive Mood in Formal Recommendations' trong ngữ cảnh văn bản học thuật.",
+                  "Quy tắc 2: Chú ý sự hòa hợp giữa chủ ngữ, thì và các trạng từ liên kết đi kèm.",
+                  "Quy tắc 3: Ứng dụng biến đổi câu linh hoạt để nâng cao tiêu chí Lexical Resource & Grammatical Range."
+                ],
+                "contrast_examples": [
+                  {
+                    "incorrect": "Incorrect usage of Subjunctive Mood in Formal Recommendations without proper agreement.",
+                    "correct": "Accurate academic implementation of Subjunctive Mood in Formal Recommendations.",
+                    "explanation": "Đảm bảo tuân thủ nguyên tắc ngữ pháp học thuật chuẩn Cambridge."
+                  },
+                  {
+                    "basic": "Diễn đạt cơ bản thường dùng các câu đơn ghép rời rạc.",
+                    "advanced": "Áp dụng cấu trúc Subjunctive Mood in Formal Recommendations giúp câu văn mạch lạc, chặt chẽ và thuyết phục hơn.",
+                    "explanation": "Tạo ấn tượng mạnh trong bài thi IELTS Writing/Speaking hoặc Cambridge FCE/CAE."
+                  }
+                ]
+              },
+              "reading_passage": {
+                "title": "The Creative Process in Symphony Composition",
+                "passage": "Understanding the creative process in symphony composition requires a multidimensional perspective on human behavior and societal progress. Scholars emphasize that as global environments evolve, our capacity to analyze real-world scenarios becomes indispensable. By actively exploring these concepts, learners can establish solid foundations and contextualize critical knowledge effectively.",
+                "highlight_words": [
+                  "motivation",
+                  "moving",
+                  "myth",
+                  "naked",
+                  "nasty"
+                ]
+              },
+              "passing_score_pct": 60,
+              "reward_xp": 60
             }
           ]
         }
@@ -829,7 +1654,35 @@
               "grammar_focus": "Inversion after Negative and Restrictive Adverbials",
               "reading_topic": "Central Banking and Inflation Control",
               "estimated_minutes": 20,
-              "xp": 80
+              "xp": 80,
+              "grammar_lesson": {
+                "concept": "Inversion after Negative and Restrictive Adverbials",
+                "formula": "Cấu trúc trọng tâm: Inversion after Negative and Restrictive Adverbials",
+                "rules": [
+                  "Quy tắc 1: Nắm vững điều kiện áp dụng của cấu trúc 'Inversion after Negative and Restrictive Adverbials' trong ngữ cảnh văn bản học thuật.",
+                  "Quy tắc 2: Chú ý sự hòa hợp giữa chủ ngữ, thì và các trạng từ liên kết đi kèm.",
+                  "Quy tắc 3: Ứng dụng biến đổi câu linh hoạt để nâng cao tiêu chí Lexical Resource & Grammatical Range."
+                ],
+                "contrast_examples": [
+                  {
+                    "incorrect": "Incorrect usage of Inversion after Negative and Restrictive Adverbials without proper agreement.",
+                    "correct": "Accurate academic implementation of Inversion after Negative and Restrictive Adverbials.",
+                    "explanation": "Đảm bảo tuân thủ nguyên tắc ngữ pháp học thuật chuẩn Cambridge."
+                  },
+                  {
+                    "basic": "Diễn đạt cơ bản thường dùng các câu đơn ghép rời rạc.",
+                    "advanced": "Áp dụng cấu trúc Inversion after Negative and Restrictive Adverbials giúp câu văn mạch lạc, chặt chẽ và thuyết phục hơn.",
+                    "explanation": "Tạo ấn tượng mạnh trong bài thi IELTS Writing/Speaking hoặc Cambridge FCE/CAE."
+                  }
+                ]
+              },
+              "reading_passage": {
+                "title": "Central Banking and Inflation Control",
+                "passage": "Understanding central banking and inflation control requires a multidimensional perspective on human behavior and societal progress. Scholars emphasize that as global environments evolve, our capacity to analyze real-world scenarios becomes indispensable. By actively exploring these concepts, learners can establish solid foundations and contextualize critical knowledge effectively.",
+                "highlight_words": []
+              },
+              "passing_score_pct": 60,
+              "reward_xp": 80
             },
             {
               "id": "c1-u1-l2",
@@ -866,7 +1719,35 @@
               "grammar_focus": "Cleft Sentences for Emphasis and Contrast",
               "reading_topic": "Supply Chain Realignment in Asia",
               "estimated_minutes": 20,
-              "xp": 80
+              "xp": 80,
+              "grammar_lesson": {
+                "concept": "Cleft Sentences for Emphasis and Contrast",
+                "formula": "Cấu trúc trọng tâm: Cleft Sentences for Emphasis and Contrast",
+                "rules": [
+                  "Quy tắc 1: Nắm vững điều kiện áp dụng của cấu trúc 'Cleft Sentences for Emphasis and Contrast' trong ngữ cảnh văn bản học thuật.",
+                  "Quy tắc 2: Chú ý sự hòa hợp giữa chủ ngữ, thì và các trạng từ liên kết đi kèm.",
+                  "Quy tắc 3: Ứng dụng biến đổi câu linh hoạt để nâng cao tiêu chí Lexical Resource & Grammatical Range."
+                ],
+                "contrast_examples": [
+                  {
+                    "incorrect": "Incorrect usage of Cleft Sentences for Emphasis and Contrast without proper agreement.",
+                    "correct": "Accurate academic implementation of Cleft Sentences for Emphasis and Contrast.",
+                    "explanation": "Đảm bảo tuân thủ nguyên tắc ngữ pháp học thuật chuẩn Cambridge."
+                  },
+                  {
+                    "basic": "Diễn đạt cơ bản thường dùng các câu đơn ghép rời rạc.",
+                    "advanced": "Áp dụng cấu trúc Cleft Sentences for Emphasis and Contrast giúp câu văn mạch lạc, chặt chẽ và thuyết phục hơn.",
+                    "explanation": "Tạo ấn tượng mạnh trong bài thi IELTS Writing/Speaking hoặc Cambridge FCE/CAE."
+                  }
+                ]
+              },
+              "reading_passage": {
+                "title": "Supply Chain Realignment in Asia",
+                "passage": "Understanding supply chain realignment in asia requires a multidimensional perspective on human behavior and societal progress. Scholars emphasize that as global environments evolve, our capacity to analyze real-world scenarios becomes indispensable. By actively exploring these concepts, learners can establish solid foundations and contextualize critical knowledge effectively.",
+                "highlight_words": []
+              },
+              "passing_score_pct": 60,
+              "reward_xp": 80
             },
             {
               "id": "c1-u1-l3",
@@ -903,7 +1784,35 @@
               "grammar_focus": "Advanced Conditionals: Inversion without If",
               "reading_topic": "Venture Capital and Tech Investment Trends",
               "estimated_minutes": 20,
-              "xp": 80
+              "xp": 80,
+              "grammar_lesson": {
+                "concept": "Advanced Conditionals: Inversion without If",
+                "formula": "Cấu trúc trọng tâm: Advanced Conditionals: Inversion without If",
+                "rules": [
+                  "Quy tắc 1: Nắm vững điều kiện áp dụng của cấu trúc 'Advanced Conditionals: Inversion without If' trong ngữ cảnh văn bản học thuật.",
+                  "Quy tắc 2: Chú ý sự hòa hợp giữa chủ ngữ, thì và các trạng từ liên kết đi kèm.",
+                  "Quy tắc 3: Ứng dụng biến đổi câu linh hoạt để nâng cao tiêu chí Lexical Resource & Grammatical Range."
+                ],
+                "contrast_examples": [
+                  {
+                    "incorrect": "Incorrect usage of Advanced Conditionals: Inversion without If without proper agreement.",
+                    "correct": "Accurate academic implementation of Advanced Conditionals: Inversion without If.",
+                    "explanation": "Đảm bảo tuân thủ nguyên tắc ngữ pháp học thuật chuẩn Cambridge."
+                  },
+                  {
+                    "basic": "Diễn đạt cơ bản thường dùng các câu đơn ghép rời rạc.",
+                    "advanced": "Áp dụng cấu trúc Advanced Conditionals: Inversion without If giúp câu văn mạch lạc, chặt chẽ và thuyết phục hơn.",
+                    "explanation": "Tạo ấn tượng mạnh trong bài thi IELTS Writing/Speaking hoặc Cambridge FCE/CAE."
+                  }
+                ]
+              },
+              "reading_passage": {
+                "title": "Venture Capital and Tech Investment Trends",
+                "passage": "Understanding venture capital and tech investment trends requires a multidimensional perspective on human behavior and societal progress. Scholars emphasize that as global environments evolve, our capacity to analyze real-world scenarios becomes indispensable. By actively exploring these concepts, learners can establish solid foundations and contextualize critical knowledge effectively.",
+                "highlight_words": []
+              },
+              "passing_score_pct": 60,
+              "reward_xp": 80
             },
             {
               "id": "c1-u1-l4",
@@ -940,7 +1849,35 @@
               "grammar_focus": "Subjunctive Mood in Legal and Economic Policy",
               "reading_topic": "Addressing Economic Disparities Globally",
               "estimated_minutes": 20,
-              "xp": 80
+              "xp": 80,
+              "grammar_lesson": {
+                "concept": "Subjunctive Mood in Legal and Economic Policy",
+                "formula": "Cấu trúc trọng tâm: Subjunctive Mood in Legal and Economic Policy",
+                "rules": [
+                  "Quy tắc 1: Nắm vững điều kiện áp dụng của cấu trúc 'Subjunctive Mood in Legal and Economic Policy' trong ngữ cảnh văn bản học thuật.",
+                  "Quy tắc 2: Chú ý sự hòa hợp giữa chủ ngữ, thì và các trạng từ liên kết đi kèm.",
+                  "Quy tắc 3: Ứng dụng biến đổi câu linh hoạt để nâng cao tiêu chí Lexical Resource & Grammatical Range."
+                ],
+                "contrast_examples": [
+                  {
+                    "incorrect": "Incorrect usage of Subjunctive Mood in Legal and Economic Policy without proper agreement.",
+                    "correct": "Accurate academic implementation of Subjunctive Mood in Legal and Economic Policy.",
+                    "explanation": "Đảm bảo tuân thủ nguyên tắc ngữ pháp học thuật chuẩn Cambridge."
+                  },
+                  {
+                    "basic": "Diễn đạt cơ bản thường dùng các câu đơn ghép rời rạc.",
+                    "advanced": "Áp dụng cấu trúc Subjunctive Mood in Legal and Economic Policy giúp câu văn mạch lạc, chặt chẽ và thuyết phục hơn.",
+                    "explanation": "Tạo ấn tượng mạnh trong bài thi IELTS Writing/Speaking hoặc Cambridge FCE/CAE."
+                  }
+                ]
+              },
+              "reading_passage": {
+                "title": "Addressing Economic Disparities Globally",
+                "passage": "Understanding addressing economic disparities globally requires a multidimensional perspective on human behavior and societal progress. Scholars emphasize that as global environments evolve, our capacity to analyze real-world scenarios becomes indispensable. By actively exploring these concepts, learners can establish solid foundations and contextualize critical knowledge effectively.",
+                "highlight_words": []
+              },
+              "passing_score_pct": 60,
+              "reward_xp": 80
             }
           ]
         },
@@ -985,7 +1922,35 @@
               "grammar_focus": "Nominalization in Academic Writing",
               "reading_topic": "Utilitarianism vs Deontological Ethics",
               "estimated_minutes": 20,
-              "xp": 80
+              "xp": 80,
+              "grammar_lesson": {
+                "concept": "Nominalization in Academic Writing",
+                "formula": "Cấu trúc trọng tâm: Nominalization in Academic Writing",
+                "rules": [
+                  "Quy tắc 1: Nắm vững điều kiện áp dụng của cấu trúc 'Nominalization in Academic Writing' trong ngữ cảnh văn bản học thuật.",
+                  "Quy tắc 2: Chú ý sự hòa hợp giữa chủ ngữ, thì và các trạng từ liên kết đi kèm.",
+                  "Quy tắc 3: Ứng dụng biến đổi câu linh hoạt để nâng cao tiêu chí Lexical Resource & Grammatical Range."
+                ],
+                "contrast_examples": [
+                  {
+                    "incorrect": "Incorrect usage of Nominalization in Academic Writing without proper agreement.",
+                    "correct": "Accurate academic implementation of Nominalization in Academic Writing.",
+                    "explanation": "Đảm bảo tuân thủ nguyên tắc ngữ pháp học thuật chuẩn Cambridge."
+                  },
+                  {
+                    "basic": "Diễn đạt cơ bản thường dùng các câu đơn ghép rời rạc.",
+                    "advanced": "Áp dụng cấu trúc Nominalization in Academic Writing giúp câu văn mạch lạc, chặt chẽ và thuyết phục hơn.",
+                    "explanation": "Tạo ấn tượng mạnh trong bài thi IELTS Writing/Speaking hoặc Cambridge FCE/CAE."
+                  }
+                ]
+              },
+              "reading_passage": {
+                "title": "Utilitarianism vs Deontological Ethics",
+                "passage": "Understanding utilitarianism vs deontological ethics requires a multidimensional perspective on human behavior and societal progress. Scholars emphasize that as global environments evolve, our capacity to analyze real-world scenarios becomes indispensable. By actively exploring these concepts, learners can establish solid foundations and contextualize critical knowledge effectively.",
+                "highlight_words": []
+              },
+              "passing_score_pct": 60,
+              "reward_xp": 80
             },
             {
               "id": "c1-u2-l2",
@@ -1022,7 +1987,35 @@
               "grammar_focus": "Participle Clauses for Concise Argumentation",
               "reading_topic": "The International Protection of Fundamental Rights",
               "estimated_minutes": 20,
-              "xp": 80
+              "xp": 80,
+              "grammar_lesson": {
+                "concept": "Participle Clauses for Concise Argumentation",
+                "formula": "Cấu trúc trọng tâm: Participle Clauses for Concise Argumentation",
+                "rules": [
+                  "Quy tắc 1: Nắm vững điều kiện áp dụng của cấu trúc 'Participle Clauses for Concise Argumentation' trong ngữ cảnh văn bản học thuật.",
+                  "Quy tắc 2: Chú ý sự hòa hợp giữa chủ ngữ, thì và các trạng từ liên kết đi kèm.",
+                  "Quy tắc 3: Ứng dụng biến đổi câu linh hoạt để nâng cao tiêu chí Lexical Resource & Grammatical Range."
+                ],
+                "contrast_examples": [
+                  {
+                    "incorrect": "Incorrect usage of Participle Clauses for Concise Argumentation without proper agreement.",
+                    "correct": "Accurate academic implementation of Participle Clauses for Concise Argumentation.",
+                    "explanation": "Đảm bảo tuân thủ nguyên tắc ngữ pháp học thuật chuẩn Cambridge."
+                  },
+                  {
+                    "basic": "Diễn đạt cơ bản thường dùng các câu đơn ghép rời rạc.",
+                    "advanced": "Áp dụng cấu trúc Participle Clauses for Concise Argumentation giúp câu văn mạch lạc, chặt chẽ và thuyết phục hơn.",
+                    "explanation": "Tạo ấn tượng mạnh trong bài thi IELTS Writing/Speaking hoặc Cambridge FCE/CAE."
+                  }
+                ]
+              },
+              "reading_passage": {
+                "title": "The International Protection of Fundamental Rights",
+                "passage": "Understanding the international protection of fundamental rights requires a multidimensional perspective on human behavior and societal progress. Scholars emphasize that as global environments evolve, our capacity to analyze real-world scenarios becomes indispensable. By actively exploring these concepts, learners can establish solid foundations and contextualize critical knowledge effectively.",
+                "highlight_words": []
+              },
+              "passing_score_pct": 60,
+              "reward_xp": 80
             },
             {
               "id": "c1-u2-l3",
@@ -1059,7 +2052,35 @@
               "grammar_focus": "Advanced Passive Constructions with Modal Verbs",
               "reading_topic": "Regulating Autonomous Decision-Making Systems",
               "estimated_minutes": 20,
-              "xp": 80
+              "xp": 80,
+              "grammar_lesson": {
+                "concept": "Advanced Passive Constructions with Modal Verbs",
+                "formula": "Cấu trúc trọng tâm: Advanced Passive Constructions with Modal Verbs",
+                "rules": [
+                  "Quy tắc 1: Nắm vững điều kiện áp dụng của cấu trúc 'Advanced Passive Constructions with Modal Verbs' trong ngữ cảnh văn bản học thuật.",
+                  "Quy tắc 2: Chú ý sự hòa hợp giữa chủ ngữ, thì và các trạng từ liên kết đi kèm.",
+                  "Quy tắc 3: Ứng dụng biến đổi câu linh hoạt để nâng cao tiêu chí Lexical Resource & Grammatical Range."
+                ],
+                "contrast_examples": [
+                  {
+                    "incorrect": "Incorrect usage of Advanced Passive Constructions with Modal Verbs without proper agreement.",
+                    "correct": "Accurate academic implementation of Advanced Passive Constructions with Modal Verbs.",
+                    "explanation": "Đảm bảo tuân thủ nguyên tắc ngữ pháp học thuật chuẩn Cambridge."
+                  },
+                  {
+                    "basic": "Diễn đạt cơ bản thường dùng các câu đơn ghép rời rạc.",
+                    "advanced": "Áp dụng cấu trúc Advanced Passive Constructions with Modal Verbs giúp câu văn mạch lạc, chặt chẽ và thuyết phục hơn.",
+                    "explanation": "Tạo ấn tượng mạnh trong bài thi IELTS Writing/Speaking hoặc Cambridge FCE/CAE."
+                  }
+                ]
+              },
+              "reading_passage": {
+                "title": "Regulating Autonomous Decision-Making Systems",
+                "passage": "Understanding regulating autonomous decision-making systems requires a multidimensional perspective on human behavior and societal progress. Scholars emphasize that as global environments evolve, our capacity to analyze real-world scenarios becomes indispensable. By actively exploring these concepts, learners can establish solid foundations and contextualize critical knowledge effectively.",
+                "highlight_words": []
+              },
+              "passing_score_pct": 60,
+              "reward_xp": 80
             },
             {
               "id": "c1-u2-l4",
@@ -1096,7 +2117,35 @@
               "grammar_focus": "Ellipsis and Substitution in Formal Texts",
               "reading_topic": "Rethinking the Social Contract in Digital Age",
               "estimated_minutes": 20,
-              "xp": 80
+              "xp": 80,
+              "grammar_lesson": {
+                "concept": "Ellipsis and Substitution in Formal Texts",
+                "formula": "Cấu trúc trọng tâm: Ellipsis and Substitution in Formal Texts",
+                "rules": [
+                  "Quy tắc 1: Nắm vững điều kiện áp dụng của cấu trúc 'Ellipsis and Substitution in Formal Texts' trong ngữ cảnh văn bản học thuật.",
+                  "Quy tắc 2: Chú ý sự hòa hợp giữa chủ ngữ, thì và các trạng từ liên kết đi kèm.",
+                  "Quy tắc 3: Ứng dụng biến đổi câu linh hoạt để nâng cao tiêu chí Lexical Resource & Grammatical Range."
+                ],
+                "contrast_examples": [
+                  {
+                    "incorrect": "Incorrect usage of Ellipsis and Substitution in Formal Texts without proper agreement.",
+                    "correct": "Accurate academic implementation of Ellipsis and Substitution in Formal Texts.",
+                    "explanation": "Đảm bảo tuân thủ nguyên tắc ngữ pháp học thuật chuẩn Cambridge."
+                  },
+                  {
+                    "basic": "Diễn đạt cơ bản thường dùng các câu đơn ghép rời rạc.",
+                    "advanced": "Áp dụng cấu trúc Ellipsis and Substitution in Formal Texts giúp câu văn mạch lạc, chặt chẽ và thuyết phục hơn.",
+                    "explanation": "Tạo ấn tượng mạnh trong bài thi IELTS Writing/Speaking hoặc Cambridge FCE/CAE."
+                  }
+                ]
+              },
+              "reading_passage": {
+                "title": "Rethinking the Social Contract in Digital Age",
+                "passage": "Understanding rethinking the social contract in digital age requires a multidimensional perspective on human behavior and societal progress. Scholars emphasize that as global environments evolve, our capacity to analyze real-world scenarios becomes indispensable. By actively exploring these concepts, learners can establish solid foundations and contextualize critical knowledge effectively.",
+                "highlight_words": []
+              },
+              "passing_score_pct": 60,
+              "reward_xp": 80
             }
           ]
         },
@@ -1141,7 +2190,35 @@
               "grammar_focus": "Inversion with Should, Had, and Were",
               "reading_topic": "The Rhetorical Power of Global Speeches",
               "estimated_minutes": 20,
-              "xp": 80
+              "xp": 80,
+              "grammar_lesson": {
+                "concept": "Inversion with Should, Had, and Were",
+                "formula": "Cấu trúc trọng tâm: Inversion with Should, Had, and Were",
+                "rules": [
+                  "Quy tắc 1: Nắm vững điều kiện áp dụng của cấu trúc 'Inversion with Should, Had, and Were' trong ngữ cảnh văn bản học thuật.",
+                  "Quy tắc 2: Chú ý sự hòa hợp giữa chủ ngữ, thì và các trạng từ liên kết đi kèm.",
+                  "Quy tắc 3: Ứng dụng biến đổi câu linh hoạt để nâng cao tiêu chí Lexical Resource & Grammatical Range."
+                ],
+                "contrast_examples": [
+                  {
+                    "incorrect": "Incorrect usage of Inversion with Should, Had, and Were without proper agreement.",
+                    "correct": "Accurate academic implementation of Inversion with Should, Had, and Were.",
+                    "explanation": "Đảm bảo tuân thủ nguyên tắc ngữ pháp học thuật chuẩn Cambridge."
+                  },
+                  {
+                    "basic": "Diễn đạt cơ bản thường dùng các câu đơn ghép rời rạc.",
+                    "advanced": "Áp dụng cấu trúc Inversion with Should, Had, and Were giúp câu văn mạch lạc, chặt chẽ và thuyết phục hơn.",
+                    "explanation": "Tạo ấn tượng mạnh trong bài thi IELTS Writing/Speaking hoặc Cambridge FCE/CAE."
+                  }
+                ]
+              },
+              "reading_passage": {
+                "title": "The Rhetorical Power of Global Speeches",
+                "passage": "Understanding the rhetorical power of global speeches requires a multidimensional perspective on human behavior and societal progress. Scholars emphasize that as global environments evolve, our capacity to analyze real-world scenarios becomes indispensable. By actively exploring these concepts, learners can establish solid foundations and contextualize critical knowledge effectively.",
+                "highlight_words": []
+              },
+              "passing_score_pct": 60,
+              "reward_xp": 80
             },
             {
               "id": "c1-u3-l2",
@@ -1178,7 +2255,35 @@
               "grammar_focus": "Fronting and Inversion for Dramatic Effect",
               "reading_topic": "Nuances of Academic Collocations",
               "estimated_minutes": 20,
-              "xp": 80
+              "xp": 80,
+              "grammar_lesson": {
+                "concept": "Fronting and Inversion for Dramatic Effect",
+                "formula": "Cấu trúc trọng tâm: Fronting and Inversion for Dramatic Effect",
+                "rules": [
+                  "Quy tắc 1: Nắm vững điều kiện áp dụng của cấu trúc 'Fronting and Inversion for Dramatic Effect' trong ngữ cảnh văn bản học thuật.",
+                  "Quy tắc 2: Chú ý sự hòa hợp giữa chủ ngữ, thì và các trạng từ liên kết đi kèm.",
+                  "Quy tắc 3: Ứng dụng biến đổi câu linh hoạt để nâng cao tiêu chí Lexical Resource & Grammatical Range."
+                ],
+                "contrast_examples": [
+                  {
+                    "incorrect": "Incorrect usage of Fronting and Inversion for Dramatic Effect without proper agreement.",
+                    "correct": "Accurate academic implementation of Fronting and Inversion for Dramatic Effect.",
+                    "explanation": "Đảm bảo tuân thủ nguyên tắc ngữ pháp học thuật chuẩn Cambridge."
+                  },
+                  {
+                    "basic": "Diễn đạt cơ bản thường dùng các câu đơn ghép rời rạc.",
+                    "advanced": "Áp dụng cấu trúc Fronting and Inversion for Dramatic Effect giúp câu văn mạch lạc, chặt chẽ và thuyết phục hơn.",
+                    "explanation": "Tạo ấn tượng mạnh trong bài thi IELTS Writing/Speaking hoặc Cambridge FCE/CAE."
+                  }
+                ]
+              },
+              "reading_passage": {
+                "title": "Nuances of Academic Collocations",
+                "passage": "Understanding nuances of academic collocations requires a multidimensional perspective on human behavior and societal progress. Scholars emphasize that as global environments evolve, our capacity to analyze real-world scenarios becomes indispensable. By actively exploring these concepts, learners can establish solid foundations and contextualize critical knowledge effectively.",
+                "highlight_words": []
+              },
+              "passing_score_pct": 60,
+              "reward_xp": 80
             },
             {
               "id": "c1-u3-l3",
@@ -1215,7 +2320,35 @@
               "grammar_focus": "Complex Prepositional Phrases",
               "reading_topic": "Mastering Cohesion in C1 Essay Writing",
               "estimated_minutes": 20,
-              "xp": 80
+              "xp": 80,
+              "grammar_lesson": {
+                "concept": "Complex Prepositional Phrases",
+                "formula": "Cấu trúc trọng tâm: Complex Prepositional Phrases",
+                "rules": [
+                  "Quy tắc 1: Nắm vững điều kiện áp dụng của cấu trúc 'Complex Prepositional Phrases' trong ngữ cảnh văn bản học thuật.",
+                  "Quy tắc 2: Chú ý sự hòa hợp giữa chủ ngữ, thì và các trạng từ liên kết đi kèm.",
+                  "Quy tắc 3: Ứng dụng biến đổi câu linh hoạt để nâng cao tiêu chí Lexical Resource & Grammatical Range."
+                ],
+                "contrast_examples": [
+                  {
+                    "incorrect": "Incorrect usage of Complex Prepositional Phrases without proper agreement.",
+                    "correct": "Accurate academic implementation of Complex Prepositional Phrases.",
+                    "explanation": "Đảm bảo tuân thủ nguyên tắc ngữ pháp học thuật chuẩn Cambridge."
+                  },
+                  {
+                    "basic": "Diễn đạt cơ bản thường dùng các câu đơn ghép rời rạc.",
+                    "advanced": "Áp dụng cấu trúc Complex Prepositional Phrases giúp câu văn mạch lạc, chặt chẽ và thuyết phục hơn.",
+                    "explanation": "Tạo ấn tượng mạnh trong bài thi IELTS Writing/Speaking hoặc Cambridge FCE/CAE."
+                  }
+                ]
+              },
+              "reading_passage": {
+                "title": "Mastering Cohesion in C1 Essay Writing",
+                "passage": "Understanding mastering cohesion in c1 essay writing requires a multidimensional perspective on human behavior and societal progress. Scholars emphasize that as global environments evolve, our capacity to analyze real-world scenarios becomes indispensable. By actively exploring these concepts, learners can establish solid foundations and contextualize critical knowledge effectively.",
+                "highlight_words": []
+              },
+              "passing_score_pct": 60,
+              "reward_xp": 80
             },
             {
               "id": "c1-u3-l4",
@@ -1252,7 +2385,35 @@
               "grammar_focus": "Parenthetical Phrases and Comment Clauses",
               "reading_topic": "Deciphering Irony in Contemporary Literature",
               "estimated_minutes": 20,
-              "xp": 80
+              "xp": 80,
+              "grammar_lesson": {
+                "concept": "Parenthetical Phrases and Comment Clauses",
+                "formula": "Cấu trúc trọng tâm: Parenthetical Phrases and Comment Clauses",
+                "rules": [
+                  "Quy tắc 1: Nắm vững điều kiện áp dụng của cấu trúc 'Parenthetical Phrases and Comment Clauses' trong ngữ cảnh văn bản học thuật.",
+                  "Quy tắc 2: Chú ý sự hòa hợp giữa chủ ngữ, thì và các trạng từ liên kết đi kèm.",
+                  "Quy tắc 3: Ứng dụng biến đổi câu linh hoạt để nâng cao tiêu chí Lexical Resource & Grammatical Range."
+                ],
+                "contrast_examples": [
+                  {
+                    "incorrect": "Incorrect usage of Parenthetical Phrases and Comment Clauses without proper agreement.",
+                    "correct": "Accurate academic implementation of Parenthetical Phrases and Comment Clauses.",
+                    "explanation": "Đảm bảo tuân thủ nguyên tắc ngữ pháp học thuật chuẩn Cambridge."
+                  },
+                  {
+                    "basic": "Diễn đạt cơ bản thường dùng các câu đơn ghép rời rạc.",
+                    "advanced": "Áp dụng cấu trúc Parenthetical Phrases and Comment Clauses giúp câu văn mạch lạc, chặt chẽ và thuyết phục hơn.",
+                    "explanation": "Tạo ấn tượng mạnh trong bài thi IELTS Writing/Speaking hoặc Cambridge FCE/CAE."
+                  }
+                ]
+              },
+              "reading_passage": {
+                "title": "Deciphering Irony in Contemporary Literature",
+                "passage": "Understanding deciphering irony in contemporary literature requires a multidimensional perspective on human behavior and societal progress. Scholars emphasize that as global environments evolve, our capacity to analyze real-world scenarios becomes indispensable. By actively exploring these concepts, learners can establish solid foundations and contextualize critical knowledge effectively.",
+                "highlight_words": []
+              },
+              "passing_score_pct": 60,
+              "reward_xp": 80
             }
           ]
         },
@@ -1297,7 +2458,35 @@
               "grammar_focus": "Cleft Sentences with All, What, and The person who",
               "reading_topic": "Behavioral Economics in Everyday Decisions",
               "estimated_minutes": 20,
-              "xp": 80
+              "xp": 80,
+              "grammar_lesson": {
+                "concept": "Cleft Sentences with All, What, and The person who",
+                "formula": "Cấu trúc trọng tâm: Cleft Sentences with All, What, and The person who",
+                "rules": [
+                  "Quy tắc 1: Nắm vững điều kiện áp dụng của cấu trúc 'Cleft Sentences with All, What, and The person who' trong ngữ cảnh văn bản học thuật.",
+                  "Quy tắc 2: Chú ý sự hòa hợp giữa chủ ngữ, thì và các trạng từ liên kết đi kèm.",
+                  "Quy tắc 3: Ứng dụng biến đổi câu linh hoạt để nâng cao tiêu chí Lexical Resource & Grammatical Range."
+                ],
+                "contrast_examples": [
+                  {
+                    "incorrect": "Incorrect usage of Cleft Sentences with All, What, and The person who without proper agreement.",
+                    "correct": "Accurate academic implementation of Cleft Sentences with All, What, and The person who.",
+                    "explanation": "Đảm bảo tuân thủ nguyên tắc ngữ pháp học thuật chuẩn Cambridge."
+                  },
+                  {
+                    "basic": "Diễn đạt cơ bản thường dùng các câu đơn ghép rời rạc.",
+                    "advanced": "Áp dụng cấu trúc Cleft Sentences with All, What, and The person who giúp câu văn mạch lạc, chặt chẽ và thuyết phục hơn.",
+                    "explanation": "Tạo ấn tượng mạnh trong bài thi IELTS Writing/Speaking hoặc Cambridge FCE/CAE."
+                  }
+                ]
+              },
+              "reading_passage": {
+                "title": "Behavioral Economics in Everyday Decisions",
+                "passage": "Understanding behavioral economics in everyday decisions requires a multidimensional perspective on human behavior and societal progress. Scholars emphasize that as global environments evolve, our capacity to analyze real-world scenarios becomes indispensable. By actively exploring these concepts, learners can establish solid foundations and contextualize critical knowledge effectively.",
+                "highlight_words": []
+              },
+              "passing_score_pct": 60,
+              "reward_xp": 80
             },
             {
               "id": "c1-u4-l2",
@@ -1334,7 +2523,35 @@
               "grammar_focus": "Advanced Uses of Would and Used to",
               "reading_topic": "The Neurobiology of Lifelong Learning",
               "estimated_minutes": 20,
-              "xp": 80
+              "xp": 80,
+              "grammar_lesson": {
+                "concept": "Advanced Uses of Would and Used to",
+                "formula": "Cấu trúc trọng tâm: Advanced Uses of Would and Used to",
+                "rules": [
+                  "Quy tắc 1: Nắm vững điều kiện áp dụng của cấu trúc 'Advanced Uses of Would and Used to' trong ngữ cảnh văn bản học thuật.",
+                  "Quy tắc 2: Chú ý sự hòa hợp giữa chủ ngữ, thì và các trạng từ liên kết đi kèm.",
+                  "Quy tắc 3: Ứng dụng biến đổi câu linh hoạt để nâng cao tiêu chí Lexical Resource & Grammatical Range."
+                ],
+                "contrast_examples": [
+                  {
+                    "incorrect": "Incorrect usage of Advanced Uses of Would and Used to without proper agreement.",
+                    "correct": "Accurate academic implementation of Advanced Uses of Would and Used to.",
+                    "explanation": "Đảm bảo tuân thủ nguyên tắc ngữ pháp học thuật chuẩn Cambridge."
+                  },
+                  {
+                    "basic": "Diễn đạt cơ bản thường dùng các câu đơn ghép rời rạc.",
+                    "advanced": "Áp dụng cấu trúc Advanced Uses of Would and Used to giúp câu văn mạch lạc, chặt chẽ và thuyết phục hơn.",
+                    "explanation": "Tạo ấn tượng mạnh trong bài thi IELTS Writing/Speaking hoặc Cambridge FCE/CAE."
+                  }
+                ]
+              },
+              "reading_passage": {
+                "title": "The Neurobiology of Lifelong Learning",
+                "passage": "Understanding the neurobiology of lifelong learning requires a multidimensional perspective on human behavior and societal progress. Scholars emphasize that as global environments evolve, our capacity to analyze real-world scenarios becomes indispensable. By actively exploring these concepts, learners can establish solid foundations and contextualize critical knowledge effectively.",
+                "highlight_words": []
+              },
+              "passing_score_pct": 60,
+              "reward_xp": 80
             },
             {
               "id": "c1-u4-l3",
@@ -1371,7 +2588,35 @@
               "grammar_focus": "Inversion with Only after, Only when, Not until",
               "reading_topic": "The Role of EQ in Executive Leadership",
               "estimated_minutes": 20,
-              "xp": 80
+              "xp": 80,
+              "grammar_lesson": {
+                "concept": "Inversion with Only after, Only when, Not until",
+                "formula": "Cấu trúc trọng tâm: Inversion with Only after, Only when, Not until",
+                "rules": [
+                  "Quy tắc 1: Nắm vững điều kiện áp dụng của cấu trúc 'Inversion with Only after, Only when, Not until' trong ngữ cảnh văn bản học thuật.",
+                  "Quy tắc 2: Chú ý sự hòa hợp giữa chủ ngữ, thì và các trạng từ liên kết đi kèm.",
+                  "Quy tắc 3: Ứng dụng biến đổi câu linh hoạt để nâng cao tiêu chí Lexical Resource & Grammatical Range."
+                ],
+                "contrast_examples": [
+                  {
+                    "incorrect": "Incorrect usage of Inversion with Only after, Only when, Not until without proper agreement.",
+                    "correct": "Accurate academic implementation of Inversion with Only after, Only when, Not until.",
+                    "explanation": "Đảm bảo tuân thủ nguyên tắc ngữ pháp học thuật chuẩn Cambridge."
+                  },
+                  {
+                    "basic": "Diễn đạt cơ bản thường dùng các câu đơn ghép rời rạc.",
+                    "advanced": "Áp dụng cấu trúc Inversion with Only after, Only when, Not until giúp câu văn mạch lạc, chặt chẽ và thuyết phục hơn.",
+                    "explanation": "Tạo ấn tượng mạnh trong bài thi IELTS Writing/Speaking hoặc Cambridge FCE/CAE."
+                  }
+                ]
+              },
+              "reading_passage": {
+                "title": "The Role of EQ in Executive Leadership",
+                "passage": "Understanding the role of eq in executive leadership requires a multidimensional perspective on human behavior and societal progress. Scholars emphasize that as global environments evolve, our capacity to analyze real-world scenarios becomes indispensable. By actively exploring these concepts, learners can establish solid foundations and contextualize critical knowledge effectively.",
+                "highlight_words": []
+              },
+              "passing_score_pct": 60,
+              "reward_xp": 80
             },
             {
               "id": "c1-u4-l4",
@@ -1408,7 +2653,35 @@
               "grammar_focus": "Double Comparatives (The more..., the better...)",
               "reading_topic": "The Cognitive Science of Sleep and Recovery",
               "estimated_minutes": 20,
-              "xp": 80
+              "xp": 80,
+              "grammar_lesson": {
+                "concept": "Double Comparatives (The more..., the better...)",
+                "formula": "Cấu trúc trọng tâm: Double Comparatives (The more..., the better...)",
+                "rules": [
+                  "Quy tắc 1: Nắm vững điều kiện áp dụng của cấu trúc 'Double Comparatives (The more..., the better...)' trong ngữ cảnh văn bản học thuật.",
+                  "Quy tắc 2: Chú ý sự hòa hợp giữa chủ ngữ, thì và các trạng từ liên kết đi kèm.",
+                  "Quy tắc 3: Ứng dụng biến đổi câu linh hoạt để nâng cao tiêu chí Lexical Resource & Grammatical Range."
+                ],
+                "contrast_examples": [
+                  {
+                    "incorrect": "Incorrect usage of Double Comparatives (The more..., the better...) without proper agreement.",
+                    "correct": "Accurate academic implementation of Double Comparatives (The more..., the better...).",
+                    "explanation": "Đảm bảo tuân thủ nguyên tắc ngữ pháp học thuật chuẩn Cambridge."
+                  },
+                  {
+                    "basic": "Diễn đạt cơ bản thường dùng các câu đơn ghép rời rạc.",
+                    "advanced": "Áp dụng cấu trúc Double Comparatives (The more..., the better...) giúp câu văn mạch lạc, chặt chẽ và thuyết phục hơn.",
+                    "explanation": "Tạo ấn tượng mạnh trong bài thi IELTS Writing/Speaking hoặc Cambridge FCE/CAE."
+                  }
+                ]
+              },
+              "reading_passage": {
+                "title": "The Cognitive Science of Sleep and Recovery",
+                "passage": "Understanding the cognitive science of sleep and recovery requires a multidimensional perspective on human behavior and societal progress. Scholars emphasize that as global environments evolve, our capacity to analyze real-world scenarios becomes indispensable. By actively exploring these concepts, learners can establish solid foundations and contextualize critical knowledge effectively.",
+                "highlight_words": []
+              },
+              "passing_score_pct": 60,
+              "reward_xp": 80
             }
           ]
         }

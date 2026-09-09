@@ -363,7 +363,7 @@ export const CoursesView: React.FC = () => {
                               borderRadius: 999,
                             }}
                           >
-                            <CheckCircle2 size={12} /> Hoàn thành
+                            <CheckCircle2 size={12} /> Hoàn thành {lesson.score ? `(${lesson.score}%)` : ''}
                           </span>
                         ) : isUnlocked ? (
                           <span
@@ -461,7 +461,7 @@ export const CoursesView: React.FC = () => {
       {/* Interactive Lesson Player Modal */}
       {activeLessonId && (
         <LessonPlayerModal
-          courseId={activeCourseId}
+          courseId={activeLessonId.startsWith('c1-') ? 'c1-advanced' : 'b2-first'}
           lessonId={activeLessonId}
           onClose={() => setActiveLessonId(null)}
           onLessonCompleted={handleLessonCompleted}

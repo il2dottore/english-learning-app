@@ -20,6 +20,8 @@ import {
   BookMarked,
   Flame,
   Check,
+  VolumeX,
+  ArrowLeftRight,
 } from 'lucide-react'
 import {
   ExerciseCloze,
@@ -57,6 +59,8 @@ export const VocabularyView: React.FC<VocabularyViewProps> = ({ currentLevel }) 
   const [batchSize, setBatchSize] = useState(15)
   const [sessionLearnedCount, setSessionLearnedCount] = useState(0)
   const [isSessionComplete, setIsSessionComplete] = useState(false)
+  const [studyDirection, setStudyDirection] = useState<'en-vi' | 'vi-en'>('en-vi')
+  const [autoPronounce, setAutoPronounce] = useState<boolean>(true)
 
   // SRS Queue stats
   const [srsStats, setSrsStats] = useState<SRSQueueStats | null>(null)
@@ -183,6 +187,16 @@ export const VocabularyView: React.FC<VocabularyViewProps> = ({ currentLevel }) 
       loadLabExercises()
     }
   }, [subTab, loadFlashcards, loadSRSStats, loadDictionary, loadLabExercises])
+
+  // Auto-pronounce current card word when moving to a new card
+  useEffect(() => {
+    if (subTab === 'flashcards' && autoPronounce && cards[currentIndex] && !isSessionComplete) {
+      const timer = setTimeout(() => {
+        speakEnglish(cards[currentIndex].word)
+      }, 150)
+      return () => clearTimeout(timer)
+    }
+  }, [currentIndex, cards, autoPronounce, subTab, isSessionComplete])
 
   // Submit Flashcard Review Rating (1, 2, or 3)
   const handleRateCard = async (rating: 1 | 2 | 3) => {
@@ -351,89 +365,171 @@ export const VocabularyView: React.FC<VocabularyViewProps> = ({ currentLevel }) 
       </div>
 
       {/* ========================================================================= */}
-      {/* 1. FLASHCARD 3D FOCUS MODE */}
+      {/* 1. FLASHCARD 3D FOCUS MODE - EDTECH STUDIO */}
       {/* ========================================================================= */}
       {subTab === 'flashcards' && (
-        <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: 18, width: '100%' }}>
           {isSessionComplete ? (
-            /* Session Completed Screen */
-            <div className="card animate-fade-in" style={{ maxWidth: 680, margin: '0 auto', textAlign: 'center', padding: 40 }}>
+            /* Session Completed Celebration Screen */
+            <div
+              className="card animate-fade-in"
+              style={{
+                maxWidth: 680,
+                margin: '20px auto',
+                textAlign: 'center',
+                padding: '48px 36px',
+                background: 'linear-gradient(160deg, rgba(30, 41, 59, 0.95) 0%, rgba(15, 23, 42, 0.98) 100%)',
+                border: '1px solid rgba(99, 102, 241, 0.3)',
+                boxShadow: '0 20px 50px rgba(0, 0, 0, 0.5), 0 0 30px rgba(99, 102, 241, 0.15)',
+              }}
+            >
               <div
                 style={{
-                  width: 68,
-                  height: 68,
+                  width: 80,
+                  height: 80,
                   borderRadius: '50%',
-                  background: 'var(--accent-emerald-bg)',
-                  color: 'var(--accent-emerald)',
+                  background: 'linear-gradient(135deg, rgba(16, 185, 129, 0.2) 0%, rgba(5, 150, 105, 0.3) 100%)',
+                  color: '#34d399',
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
-                  margin: '0 auto 16px',
-                  border: '2px solid var(--accent-emerald)',
+                  margin: '0 auto 20px',
+                  border: '2px solid rgba(16, 185, 129, 0.5)',
+                  boxShadow: '0 0 24px rgba(16, 185, 129, 0.3)',
                 }}
               >
-                <CheckCircle size={36} />
+                <CheckCircle size={44} />
               </div>
-              <h2 style={{ fontSize: 24, fontWeight: 800, color: '#fff', marginBottom: 8 }}>
-                Hoàn thành phiên học {batchSize} từ vựng!
+              <h2 style={{ fontSize: 26, fontWeight: 800, color: '#fff', marginBottom: 10, letterSpacing: '-0.02em' }}>
+                Tuyệt vời! Hoàn thành phiên {cards.length} từ vựng!
               </h2>
-              <p style={{ color: 'var(--text-secondary)', fontSize: 14, marginBottom: 24 }}>
-                Dữ liệu đánh giá trí nhớ đã được cập nhật vào thuật toán Spaced Repetition.
+              <p style={{ color: 'var(--text-secondary)', fontSize: 14, marginBottom: 28, maxWidth: 460, margin: '0 auto 28px' }}>
+                Toàn bộ dữ liệu phản xạ trí nhớ đã được ghi nhận vào thuật toán SuperMemo SM-2 và đồng bộ trực tiếp vào kho lưu trữ JSON.
               </p>
-              <div style={{ display: 'flex', justifyContent: 'center', gap: 12 }}>
-                <button className="btn btn-primary" onClick={() => loadFlashcards(false)}>
-                  <Shuffle size={15} />
-                  <span>Học tiếp {batchSize} từ mới</span>
+              <div style={{ display: 'flex', justifyContent: 'center', gap: 14, flexWrap: 'wrap' }}>
+                <button className="btn btn-primary" onClick={() => loadFlashcards(false)} style={{ padding: '10px 20px' }}>
+                  <Shuffle size={16} />
+                  <span>Học tiếp {batchSize} từ ngẫu nhiên</span>
                 </button>
-                <button className="btn btn-outline" onClick={() => setSubTab('srs')}>
-                  <BrainCircuit size={15} />
-                  <span>Xem lịch nhắc nhở SRS</span>
+                <button className="btn btn-outline" onClick={() => setSubTab('srs')} style={{ padding: '10px 20px' }}>
+                  <BrainCircuit size={16} />
+                  <span>Xem lịch nhắc Spaced Repetition</span>
                 </button>
               </div>
             </div>
           ) : (
             <>
-              {/* Flashcard Header Controls */}
-              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', maxWidth: 680, margin: '0 auto', width: '100%' }}>
-                <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
-                  <span style={{ fontSize: 14, fontWeight: 800, color: '#fff' }}>
+              {/* Studio Header: Progress & Interactive Options */}
+              <div
+                style={{
+                  display: 'flex',
+                  justifyContent: 'space-between',
+                  alignItems: 'center',
+                  maxWidth: 680,
+                  width: '100%',
+                  margin: '0 auto',
+                  flexWrap: 'wrap',
+                  gap: 12,
+                }}
+              >
+                {/* Progress bar with percentage */}
+                <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
+                  <span style={{ fontSize: 14, fontWeight: 800, color: '#fff', letterSpacing: '-0.01em' }}>
                     Thẻ {cards.length > 0 ? currentIndex + 1 : 0} / {cards.length}
                   </span>
-                  <div style={{ width: 100, height: 6, borderRadius: 999, background: 'rgba(255, 255, 255, 0.1)', overflow: 'hidden' }}>
+                  <div
+                    style={{
+                      width: 120,
+                      height: 8,
+                      borderRadius: 999,
+                      background: 'rgba(255, 255, 255, 0.1)',
+                      overflow: 'hidden',
+                      position: 'relative',
+                    }}
+                  >
                     <div
                       style={{
                         height: '100%',
                         width: `${cards.length > 0 ? ((currentIndex + 1) / cards.length) * 100 : 0}%`,
-                        background: 'var(--primary)',
-                        transition: 'width 0.3s ease',
+                        background: 'linear-gradient(90deg, #6366f1 0%, #38bdf8 100%)',
+                        borderRadius: 999,
+                        transition: 'width 0.35s cubic-bezier(0.4, 0, 0.2, 1)',
+                        boxShadow: '0 0 8px rgba(99, 102, 241, 0.6)',
                       }}
                     />
                   </div>
+                  <span style={{ fontSize: 12, color: 'var(--text-muted)', fontWeight: 600 }}>
+                    {cards.length > 0 ? Math.round(((currentIndex + 1) / cards.length) * 100) : 0}%
+                  </span>
                 </div>
 
-                {/* Batch size selector */}
+                {/* Right controls: Direction, Auto Audio, Batch Size, Shuffle */}
                 <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
-                  <span style={{ fontSize: 11, color: 'var(--text-muted)' }}>Cỡ phiên:</span>
-                  {[15, 20, 30].map((size) => (
-                    <button
-                      key={size}
-                      className={`btn ${batchSize === size ? 'btn-primary' : 'btn-outline'}`}
-                      style={{ padding: '3px 8px', fontSize: 11 }}
-                      onClick={() => setBatchSize(size)}
-                    >
-                      {size}
-                    </button>
-                  ))}
-                  <button className="btn-icon" onClick={() => loadFlashcards(false)} title="Trộn bộ thẻ ngẫu nhiên">
+                  {/* Direction Switch En-Vi / Vi-En */}
+                  <button
+                    className="btn btn-outline"
+                    style={{
+                      padding: '4px 10px',
+                      fontSize: 11,
+                      gap: 4,
+                      borderColor: studyDirection === 'vi-en' ? 'var(--primary)' : undefined,
+                      color: studyDirection === 'vi-en' ? 'var(--primary-light)' : undefined,
+                    }}
+                    onClick={() => {
+                      setStudyDirection((d) => (d === 'en-vi' ? 'vi-en' : 'en-vi'))
+                      setIsFlipped(false)
+                    }}
+                    title="Đổi chiều học (Tiếng Anh ⇄ Tiếng Việt)"
+                  >
+                    <ArrowLeftRight size={13} />
+                    <span>{studyDirection === 'en-vi' ? 'Anh ➔ Việt' : 'Việt ➔ Anh'}</span>
+                  </button>
+
+                  {/* Auto-pronounce toggle */}
+                  <button
+                    className={`btn-icon ${autoPronounce ? 'active' : ''}`}
+                    style={{
+                      width: 30,
+                      height: 30,
+                      color: autoPronounce ? '#38bdf8' : 'var(--text-muted)',
+                      border: autoPronounce ? '1px solid rgba(56, 189, 248, 0.3)' : undefined,
+                    }}
+                    onClick={() => setAutoPronounce(!autoPronounce)}
+                    title={autoPronounce ? 'Tự động phát âm: ĐANG BẬT' : 'Tự động phát âm: ĐANG TẮT'}
+                  >
+                    {autoPronounce ? <Volume2 size={15} /> : <VolumeX size={15} />}
+                  </button>
+
+                  {/* Batch size selector */}
+                  <div style={{ display: 'flex', alignItems: 'center', gap: 4, background: 'rgba(255, 255, 255, 0.04)', padding: '2px 4px', borderRadius: 8 }}>
+                    {[15, 20, 30].map((size) => (
+                      <button
+                        key={size}
+                        className={`btn ${batchSize === size ? 'btn-primary' : ''}`}
+                        style={{
+                          padding: '2px 8px',
+                          fontSize: 11,
+                          background: batchSize === size ? undefined : 'transparent',
+                          border: 'none',
+                        }}
+                        onClick={() => setBatchSize(size)}
+                      >
+                        {size}
+                      </button>
+                    ))}
+                  </div>
+
+                  {/* Shuffle button */}
+                  <button className="btn-icon" onClick={() => loadFlashcards(false)} title="Trộn lại bộ thẻ ngẫu nhiên">
                     <Shuffle size={14} />
                   </button>
                 </div>
               </div>
 
-              {/* 3D Flashcard Container */}
+              {/* 3D Flashcard Stage Centerpiece */}
               <div className="flashcard-stage">
                 {loadingCards ? (
-                  <div style={{ height: 400, display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--text-muted)' }}>
+                  <div style={{ height: 420, display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--text-muted)' }}>
                     Đang nạp bộ thẻ từ vựng...
                   </div>
                 ) : currentCard ? (
@@ -443,60 +539,111 @@ export const VocabularyView: React.FC<VocabularyViewProps> = ({ currentLevel }) 
                   >
                     {/* FRONT FACE */}
                     <div className="flashcard-face flashcard-front">
+                      {/* Top Bar of Card */}
                       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                        <span className={`card-level-tag ${currentCard.level === 'C1' ? 'tag-c1' : 'tag-b2'}`}>
-                          {currentCard.level} • {currentCard.part_of_speech || 'word'}
-                        </span>
-                        <div style={{ display: 'flex', gap: 6 }}>
+                        <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+                          <span className={`card-level-tag ${currentCard.level === 'C1' ? 'tag-c1' : 'tag-b2'}`}>
+                            {currentCard.level} • {currentCard.part_of_speech || 'word'}
+                          </span>
+                          <span style={{ fontSize: 12, color: 'var(--text-muted)', fontWeight: 600 }}>
+                            #{currentCard.item_number}
+                          </span>
+                        </div>
+                        <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
                           <button
                             className="btn-icon"
                             onClick={(e) => {
                               e.stopPropagation()
                               handleToggleStar(currentCard.id)
                             }}
-                            title={currentCard.is_starred ? 'Bỏ đánh dấu sao' : 'Thêm vào sổ tay từ khó'}
+                            title={currentCard.is_starred ? 'Bỏ đánh dấu sao' : 'Thêm vào sổ tay từ khó (Phím S)'}
                             style={{ color: currentCard.is_starred ? '#fbbf24' : 'var(--text-muted)' }}
                           >
-                            <Star size={16} fill={currentCard.is_starred ? '#fbbf24' : 'none'} />
+                            <Star size={17} fill={currentCard.is_starred ? '#fbbf24' : 'none'} />
                           </button>
                           <button
                             className="btn-icon"
                             onClick={(e) => {
                               e.stopPropagation()
-                              speakEnglish(currentCard.word)
+                              speakEnglish(currentCard.word, 0.75)
                             }}
-                            title="Nghe phát âm chuẩn UK (Phím R)"
+                            title="Nghe phát âm chậm 0.75x"
+                            style={{ fontSize: 11, fontWeight: 700, padding: '0 6px', width: 'auto' }}
                           >
-                            <Volume2 size={16} />
+                            0.75x
+                          </button>
+                          <button
+                            className="btn-icon"
+                            onClick={(e) => {
+                              e.stopPropagation()
+                              speakEnglish(currentCard.word, 0.95)
+                            }}
+                            title="Nghe phát âm chuẩn UK 1.0x (Phím R)"
+                          >
+                            <Volume2 size={17} />
                           </button>
                         </div>
                       </div>
 
-                      <div style={{ textAlign: 'center', margin: 'auto 0' }}>
-                        <div className="card-word-large">{currentCard.word}</div>
-                        <div className="card-ipa" style={{ marginTop: 8 }}>
-                          {currentCard.ipa_uk || '/.../'}
-                        </div>
-                        <div style={{ fontSize: 12, color: 'var(--text-muted)', marginTop: 8 }}>
-                          [Phím R để nghe lại • Phím S để gắn sao]
+                      {/* Main Word Centerpiece */}
+                      <div style={{ textAlign: 'center', margin: 'auto 0', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 10 }}>
+                        {studyDirection === 'en-vi' ? (
+                          <>
+                            <div className="card-word-large">{currentCard.word}</div>
+                            <div className="card-ipa">
+                              {currentCard.ipa_uk || '/.../'}
+                            </div>
+                          </>
+                        ) : (
+                          <>
+                            <div style={{ fontSize: 32, fontWeight: 800, color: '#fde047', lineHeight: 1.3 }}>
+                              {currentCard.vietnamese_meaning}
+                            </div>
+                            <div style={{ fontSize: 13, color: 'var(--text-muted)', fontStyle: 'italic' }}>
+                              Hãy nhớ và đọc to từ vựng tiếng Anh tương ứng
+                            </div>
+                          </>
+                        )}
+                        <div style={{ fontSize: 12, color: 'var(--text-muted)', marginTop: 6, letterSpacing: '0.02em' }}>
+                          [Space] Lật thẻ • [R] Nghe lại • [S] Gắn sao
                         </div>
                       </div>
 
-                      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', borderTop: '1px solid var(--border-subtle)', paddingTop: 14 }}>
+                      {/* Bottom Hint of Card */}
+                      <div
+                        style={{
+                          display: 'flex',
+                          justifyContent: 'space-between',
+                          alignItems: 'center',
+                          borderTop: '1px solid rgba(255, 255, 255, 0.08)',
+                          paddingTop: 14,
+                        }}
+                      >
                         <span style={{ fontSize: 12, color: 'var(--text-muted)', display: 'flex', alignItems: 'center', gap: 6 }}>
-                          <RotateCw size={13} />
-                          <span>Nhấn Space hoặc nhấp vào thẻ để xem nghĩa</span>
+                          <RotateCw size={14} />
+                          <span>Nhấn Space hoặc nhấp vào thẻ để xem định nghĩa & ví dụ</span>
                         </span>
-                        <span style={{ fontSize: 11, color: 'var(--text-muted)' }}>#{currentCard.item_number}</span>
+                        <span style={{ fontSize: 11, color: 'rgba(255, 255, 255, 0.3)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
+                          Mặt trước
+                        </span>
                       </div>
                     </div>
 
                     {/* BACK FACE */}
                     <div className="flashcard-face flashcard-back">
+                      {/* Top Bar of Back Card */}
                       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                        <span style={{ fontSize: 15, fontWeight: 700, color: 'var(--primary-light)' }}>
-                          {currentCard.word} <span style={{ color: 'var(--text-muted)', fontWeight: 400 }}>({currentCard.part_of_speech})</span>
-                        </span>
+                        <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+                          <span style={{ fontSize: 16, fontWeight: 800, color: '#38bdf8' }}>
+                            {currentCard.word}
+                          </span>
+                          <span style={{ color: 'var(--text-muted)', fontSize: 13, fontStyle: 'italic' }}>
+                            ({currentCard.part_of_speech})
+                          </span>
+                          <span style={{ color: '#34d399', fontSize: 13, fontFamily: 'Consolas, monospace' }}>
+                            {currentCard.ipa_uk}
+                          </span>
+                        </div>
                         <div style={{ display: 'flex', gap: 6 }}>
                           <button
                             className="btn-icon"
@@ -521,86 +668,115 @@ export const VocabularyView: React.FC<VocabularyViewProps> = ({ currentLevel }) 
                         </div>
                       </div>
 
-                      <div style={{ margin: '12px 0', flex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
-                        <div style={{ fontSize: 24, fontWeight: 700, color: '#fff', marginBottom: 12 }}>
+                      {/* Main Meaning & Context Content */}
+                      <div style={{ margin: '10px 0', flex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'center', gap: 10 }}>
+                        <div style={{ fontSize: 24, fontWeight: 800, color: '#ffffff', lineHeight: 1.3 }}>
                           {currentCard.vietnamese_meaning}
                         </div>
 
                         {currentCard.example && (
-                          <div style={{ background: 'rgba(0, 0, 0, 0.25)', padding: '12px 16px', borderRadius: 'var(--radius-md)', borderLeft: '3px solid var(--primary)', marginBottom: 12 }}>
-                            <div style={{ fontSize: 11, textTransform: 'uppercase', color: 'var(--text-muted)', fontWeight: 700, marginBottom: 4 }}>
+                          <div
+                            style={{
+                              background: 'rgba(0, 0, 0, 0.3)',
+                              padding: '12px 16px',
+                              borderRadius: 12,
+                              borderLeft: '3px solid #6366f1',
+                            }}
+                          >
+                            <div style={{ fontSize: 10, textTransform: 'uppercase', color: '#818cf8', fontWeight: 700, marginBottom: 4 }}>
                               Câu ví dụ thực tế (Context)
                             </div>
-                            <div style={{ fontSize: 14, color: '#e2e8f0', fontStyle: 'italic' }}>
+                            <div style={{ fontSize: 14, color: '#e2e8f0', fontStyle: 'italic', lineHeight: 1.4 }}>
                               "{currentCard.example}"
                             </div>
                           </div>
                         )}
 
                         {currentCard.synonyms && currentCard.synonyms.length > 0 && (
-                          <div>
-                            <span style={{ fontSize: 11, textTransform: 'uppercase', color: 'var(--text-muted)', fontWeight: 700, marginRight: 8 }}>
-                              Từ đồng nghĩa:
+                          <div style={{ display: 'flex', alignItems: 'center', gap: 8, flexWrap: 'wrap' }}>
+                            <span style={{ fontSize: 11, textTransform: 'uppercase', color: 'var(--text-muted)', fontWeight: 700 }}>
+                              Đồng nghĩa:
                             </span>
-                            <div style={{ display: 'inline-flex', flexWrap: 'wrap', gap: 6, marginTop: 4 }}>
-                              {currentCard.synonyms.map((syn, idx) => (
-                                <span
-                                  key={idx}
-                                  style={{
-                                    padding: '2px 8px',
-                                    borderRadius: 'var(--radius-sm)',
-                                    background: 'rgba(99, 102, 241, 0.15)',
-                                    color: '#a5b4fc',
-                                    fontSize: 12,
-                                    fontWeight: 500,
-                                  }}
-                                >
-                                  {syn}
-                                </span>
-                              ))}
-                            </div>
+                            {currentCard.synonyms.map((syn, idx) => (
+                              <span
+                                key={idx}
+                                style={{
+                                  padding: '2px 8px',
+                                  borderRadius: 6,
+                                  background: 'rgba(99, 102, 241, 0.15)',
+                                  color: '#c7d2fe',
+                                  fontSize: 12,
+                                  fontWeight: 500,
+                                }}
+                              >
+                                {syn}
+                              </span>
+                            ))}
                           </div>
                         )}
                       </div>
 
-                      <div style={{ borderTop: '1px solid var(--border-subtle)', paddingTop: 12, display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                        <span style={{ fontSize: 12, color: 'var(--text-muted)' }}>Đánh giá để lên lịch SRS:</span>
+                      {/* Bottom SRS Rating Actions */}
+                      <div
+                        style={{
+                          borderTop: '1px solid rgba(255, 255, 255, 0.08)',
+                          paddingTop: 12,
+                          display: 'flex',
+                          justifyContent: 'space-between',
+                          alignItems: 'center',
+                          gap: 12,
+                        }}
+                      >
+                        <span style={{ fontSize: 12, color: 'var(--text-muted)', fontWeight: 500 }}>
+                          Đánh giá ghi nhớ (SRS):
+                        </span>
                         <div style={{ display: 'flex', gap: 8 }}>
                           <button
-                            className="btn"
-                            style={{ padding: '6px 12px', fontSize: 12, background: 'rgba(244, 63, 94, 0.15)', color: '#fb7185' }}
+                            className="srs-btn-rate"
+                            style={{ background: 'rgba(244, 63, 94, 0.15)', color: '#fb7185', borderColor: 'rgba(244, 63, 94, 0.3)' }}
                             onClick={(e) => {
                               e.stopPropagation()
                               handleRateCard(1)
                             }}
                             title="Phím tắt: 1"
                           >
-                            <XCircle size={14} />
-                            <span>1. Chưa nhớ</span>
+                            <span style={{ display: 'flex', alignItems: 'center', gap: 5, fontSize: 12 }}>
+                              <XCircle size={14} />
+                              <span>1. Chưa nhớ</span>
+                            </span>
+                            <span className="interval-hint">+10 phút</span>
                           </button>
+
                           <button
-                            className="btn"
-                            style={{ padding: '6px 12px', fontSize: 12, background: 'rgba(245, 158, 11, 0.15)', color: '#fbbf24' }}
+                            className="srs-btn-rate"
+                            style={{ background: 'rgba(245, 158, 11, 0.15)', color: '#fbbf24', borderColor: 'rgba(245, 158, 11, 0.3)' }}
                             onClick={(e) => {
                               e.stopPropagation()
                               handleRateCard(2)
                             }}
                             title="Phím tắt: 2"
                           >
-                            <HelpCircle size={14} />
-                            <span>2. Tạm nhớ</span>
+                            <span style={{ display: 'flex', alignItems: 'center', gap: 5, fontSize: 12 }}>
+                              <HelpCircle size={14} />
+                              <span>2. Tạm nhớ</span>
+                            </span>
+                            <span className="interval-hint">+1 ngày</span>
                           </button>
+
                           <button
-                            className="btn"
-                            style={{ padding: '6px 12px', fontSize: 12, background: 'rgba(16, 185, 129, 0.15)', color: '#34d399' }}
+                            className="srs-btn-rate"
+                            style={{ background: 'rgba(16, 185, 129, 0.15)', color: '#34d399', borderColor: 'rgba(16, 185, 129, 0.3)' }}
                             onClick={(e) => {
                               e.stopPropagation()
                               handleRateCard(3)
                             }}
                             title="Phím tắt: 3"
                           >
-                            <CheckCircle size={14} />
-                            <span>3. Đã thuộc</span>
+                            <span style={{ display: 'flex', alignItems: 'center', gap: 5, fontSize: 12 }}>
+                              <CheckCircle size={14} />
+                              <span>3. Đã thuộc</span>
+                            </span>
+                            <span className="interval-hint">+3 ngày</span>
                           </button>
                         </div>
                       </div>
@@ -613,8 +789,8 @@ export const VocabularyView: React.FC<VocabularyViewProps> = ({ currentLevel }) 
                 )}
               </div>
 
-              {/* Bottom Quick Controls Bar */}
-              <div style={{ display: 'flex', justifyContent: 'center', gap: 16 }}>
+              {/* Floating Bottom Navigation Dock */}
+              <div className="study-nav-dock">
                 <button
                   className="btn btn-outline"
                   disabled={currentIndex === 0}
@@ -622,14 +798,27 @@ export const VocabularyView: React.FC<VocabularyViewProps> = ({ currentLevel }) 
                     setIsFlipped(false)
                     setCurrentIndex((i) => Math.max(0, i - 1))
                   }}
+                  style={{ borderRadius: 999, padding: '8px 16px', fontSize: 12 }}
                 >
                   <ChevronLeft size={16} />
                   <span>Từ trước (←)</span>
                 </button>
-                <button className="btn btn-primary" onClick={() => setIsFlipped(!isFlipped)}>
-                  <RotateCw size={16} />
-                  <span>{isFlipped ? 'Xem mặt trước (Space)' : 'Lật xem nghĩa (Space)'}</span>
+
+                <button
+                  className="btn btn-primary"
+                  onClick={() => setIsFlipped(!isFlipped)}
+                  style={{
+                    borderRadius: 999,
+                    padding: '9px 24px',
+                    fontSize: 13,
+                    fontWeight: 700,
+                    boxShadow: '0 4px 16px rgba(99, 102, 241, 0.4)',
+                  }}
+                >
+                  <RotateCw size={15} />
+                  <span>{isFlipped ? 'Mặt trước (Space)' : 'Lật xem nghĩa (Space)'}</span>
                 </button>
+
                 <button
                   className="btn btn-outline"
                   disabled={currentIndex + 1 >= cards.length}
@@ -637,8 +826,9 @@ export const VocabularyView: React.FC<VocabularyViewProps> = ({ currentLevel }) 
                     setIsFlipped(false)
                     setCurrentIndex((i) => i + 1)
                   }}
+                  style={{ borderRadius: 999, padding: '8px 16px', fontSize: 12 }}
                 >
-                  <span>Từ tiếp theo (→)</span>
+                  <span>Từ kế tiếp (→)</span>
                   <ChevronRight size={16} />
                 </button>
               </div>

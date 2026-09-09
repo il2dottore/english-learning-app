@@ -13,6 +13,8 @@ import {
   Sparkles,
   Flame,
   ArrowRight,
+  Check,
+  XCircle,
 } from 'lucide-react'
 import { LessonDetail, LessonCompleteResponse } from '../../types/course'
 import { fetchLessonDetail, completeLesson, speakEnglish } from '../../lib/api'
@@ -89,6 +91,24 @@ export const LessonPlayerModal: React.FC<LessonPlayerModalProps> = ({
     }
   }, [courseId, lessonId])
 
+  // Lock body scroll and handle Escape key to close modal
+  useEffect(() => {
+    const originalOverflow = document.body.style.overflow
+    document.body.style.overflow = 'hidden'
+
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') {
+        onClose()
+      }
+    }
+    window.addEventListener('keydown', handleKeyDown)
+
+    return () => {
+      document.body.style.overflow = originalOverflow
+      window.removeEventListener('keydown', handleKeyDown)
+    }
+  }, [onClose])
+
   if (loading) {
     return (
       <div className="modal-overlay">
@@ -155,26 +175,23 @@ export const LessonPlayerModal: React.FC<LessonPlayerModalProps> = ({
       }
     })
 
-    setQuizScore(correctCount)
+    const totalQuestions = lesson.checkpoint_quiz.length
+    const scorePct = Math.round((correctCount / Math.max(totalQuestions, 1)) * 100)
+    setQuizScore(scorePct)
     setQuizSubmitted(true)
     setCurrentStep('result')
 
-    // If passed (score >= 4 or >= 80%), submit complete to backend
-    const totalQuestions = lesson.checkpoint_quiz.length
-    const passThreshold = Math.ceil(totalQuestions * 0.8)
-    const passed = correctCount >= passThreshold
-
-    if (passed) {
-      setSubmittingComplete(true)
-      try {
-        const res = await completeLesson(courseId, lessonId, correctCount)
-        setCompleteResult(res)
+    setSubmittingComplete(true)
+    try {
+      const res = await completeLesson(courseId, lessonId, scorePct)
+      setCompleteResult(res)
+      if (res.passed) {
         onLessonCompleted(res)
-      } catch (err) {
-        console.error('Failed to submit lesson completion:', err)
-      } finally {
-        setSubmittingComplete(false)
       }
+    } catch (err) {
+      console.error('Failed to submit lesson completion:', err)
+    } finally {
+      setSubmittingComplete(false)
     }
   }
 
@@ -186,9 +203,14 @@ export const LessonPlayerModal: React.FC<LessonPlayerModalProps> = ({
   }
 
   return (
-    <div className="modal-overlay animate-fade-in" style={{ zIndex: 1000 }}>
+    <div
+      className="modal-overlay animate-fade-in"
+      onClick={(e) => {
+        if (e.target === e.currentTarget) onClose()
+      }}
+    >
       <div
-        className="card"
+        className="modal-dialog"
         style={{
           width: '94%',
           maxWidth: 960,
@@ -469,67 +491,221 @@ export const LessonPlayerModal: React.FC<LessonPlayerModalProps> = ({
             </div>
           )}
 
-          {/* STEP 2: GRAMMAR & READING CONTEXT */}
+          {/* STEP 2: GRAMMAR & READING CONTEXT - RICH ACADEMIC LESSON */}
           {currentStep === 'grammar' && (
-            <div style={{ maxWidth: 760, margin: '0 auto', display: 'flex', flexDirection: 'column', gap: 20 }}>
-              {/* Grammar Card */}
+            <div style={{ maxWidth: 780, margin: '0 auto', display: 'flex', flexDirection: 'column', gap: 22 }}>
+              {/* Grammar Focus Card */}
               <div
                 className="card"
                 style={{
-                  background: 'rgba(30, 41, 59, 0.7)',
-                  border: '1px solid rgba(192, 132, 252, 0.3)',
-                  padding: 24,
+                  background: 'linear-gradient(150deg, rgba(30, 41, 59, 0.8) 0%, rgba(15, 23, 42, 0.9) 100%)',
+                  border: '1px solid rgba(192, 132, 252, 0.35)',
+                  padding: 26,
+                  boxShadow: '0 8px 24px rgba(0, 0, 0, 0.3), 0 0 16px rgba(192, 132, 252, 0.08)',
                 }}
               >
-                <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 12 }}>
-                  <Sparkles size={20} color="#c084fc" />
-                  <h4 style={{ fontSize: 17, fontWeight: 700, color: '#fff', margin: 0 }}>
-                    Tiêu điểm Ngữ pháp: {lesson.grammar_focus}
-                  </h4>
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 16 }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+                    <div
+                      style={{
+                        width: 34,
+                        height: 34,
+                        borderRadius: 10,
+                        background: 'rgba(192, 132, 252, 0.15)',
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                      }}
+                    >
+                      <Sparkles size={18} color="#c084fc" />
+                    </div>
+                    <div>
+                      <div style={{ fontSize: 11, textTransform: 'uppercase', color: '#c084fc', fontWeight: 700, letterSpacing: '0.05em' }}>
+                        Chuyên đề Ngữ pháp Trọng tâm
+                      </div>
+                      <h4 style={{ fontSize: 17, fontWeight: 800, color: '#fff', margin: 0 }}>
+                        {lesson.grammar_lesson?.concept || lesson.grammar_focus}
+                      </h4>
+                    </div>
+                  </div>
                 </div>
-                <div style={{ color: 'var(--text-secondary)', fontSize: 14, lineHeight: 1.7, whiteSpace: 'pre-line' }}>
-                  {lesson.grammar_notes}
-                </div>
+
+                {/* Formula Box */}
+                {lesson.grammar_lesson?.formula && (
+                  <div
+                    style={{
+                      background: 'rgba(192, 132, 252, 0.08)',
+                      border: '1px solid rgba(192, 132, 252, 0.25)',
+                      borderRadius: 10,
+                      padding: '12px 16px',
+                      marginBottom: 16,
+                      display: 'flex',
+                      alignItems: 'center',
+                      gap: 10,
+                    }}
+                  >
+                    <span style={{ fontSize: 11, fontWeight: 700, color: '#c084fc', textTransform: 'uppercase', whiteSpace: 'nowrap' }}>
+                      Công thức:
+                    </span>
+                    <span style={{ fontSize: 13, fontFamily: 'Consolas, monospace', color: '#f5d0fe', fontWeight: 600 }}>
+                      {lesson.grammar_lesson.formula}
+                    </span>
+                  </div>
+                )}
+
+                {/* Academic Rules */}
+                {lesson.grammar_lesson?.rules && lesson.grammar_lesson.rules.length > 0 ? (
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: 8, marginBottom: 18 }}>
+                    {lesson.grammar_lesson.rules.map((rule, idx) => (
+                      <div key={idx} style={{ display: 'flex', alignItems: 'flex-start', gap: 8 }}>
+                        <div style={{ width: 6, height: 6, borderRadius: '50%', background: '#c084fc', marginTop: 8, flexShrink: 0 }} />
+                        <span style={{ fontSize: 13, color: '#e2e8f0', lineHeight: 1.6 }}>{rule}</span>
+                      </div>
+                    ))}
+                  </div>
+                ) : (
+                  <div style={{ color: 'var(--text-secondary)', fontSize: 14, lineHeight: 1.7, whiteSpace: 'pre-line', marginBottom: 16 }}>
+                    {lesson.grammar_notes}
+                  </div>
+                )}
+
+                {/* Contrast Examples Comparison Table */}
+                {lesson.grammar_lesson?.contrast_examples && lesson.grammar_lesson.contrast_examples.length > 0 && (
+                  <div style={{ marginTop: 14 }}>
+                    <div style={{ fontSize: 12, fontWeight: 700, color: '#c084fc', textTransform: 'uppercase', marginBottom: 10, letterSpacing: '0.04em' }}>
+                      Ví dụ đối chiếu học thuật:
+                    </div>
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
+                      {lesson.grammar_lesson.contrast_examples.map((ex, idx) => (
+                        <div
+                          key={idx}
+                          style={{
+                            background: 'rgba(15, 23, 42, 0.6)',
+                            border: '1px solid rgba(255, 255, 255, 0.08)',
+                            borderRadius: 10,
+                            padding: 14,
+                          }}
+                        >
+                          {ex.incorrect && ex.correct ? (
+                            <div style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
+                              <div style={{ display: 'flex', alignItems: 'center', gap: 8, color: '#f87171', fontSize: 13 }}>
+                                <XCircle size={15} style={{ flexShrink: 0 }} />
+                                <span style={{ textDecoration: 'line-through' }}>{ex.incorrect}</span>
+                              </div>
+                              <div style={{ display: 'flex', alignItems: 'center', gap: 8, color: '#34d399', fontSize: 13, fontWeight: 600 }}>
+                                <Check size={15} style={{ flexShrink: 0 }} />
+                                <span>{ex.correct}</span>
+                              </div>
+                            </div>
+                          ) : (
+                            <div style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
+                              <div style={{ fontSize: 12, color: 'var(--text-muted)' }}>
+                                <strong style={{ color: '#94a3b8' }}>Diễn đạt cơ bản:</strong> {ex.basic}
+                              </div>
+                              <div style={{ fontSize: 13, color: '#c084fc', fontWeight: 600 }}>
+                                <strong style={{ color: '#e9d5ff' }}>Chuẩn B2/C1:</strong> {ex.advanced}
+                              </div>
+                            </div>
+                          )}
+                          <div style={{ fontSize: 12, color: 'var(--text-muted)', marginTop: 6, fontStyle: 'italic', borderTop: '1px dashed rgba(255, 255, 255, 0.06)', paddingTop: 6 }}>
+                            💡 {ex.explanation}
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
               </div>
 
               {/* Reading Passage Card */}
               <div
                 className="card"
                 style={{
-                  background: 'rgba(30, 41, 59, 0.7)',
-                  border: '1px solid rgba(56, 189, 248, 0.3)',
-                  padding: 24,
+                  background: 'linear-gradient(150deg, rgba(30, 41, 59, 0.8) 0%, rgba(15, 23, 42, 0.9) 100%)',
+                  border: '1px solid rgba(56, 189, 248, 0.35)',
+                  padding: 26,
+                  boxShadow: '0 8px 24px rgba(0, 0, 0, 0.3), 0 0 16px rgba(56, 189, 248, 0.08)',
                 }}
               >
-                <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 12 }}>
-                  <BookOpen size={20} color="#38bdf8" />
-                  <h4 style={{ fontSize: 17, fontWeight: 700, color: '#fff', margin: 0 }}>
-                    Đọc hiểu ngữ cảnh: {lesson.reading_topic}
-                  </h4>
-                </div>
-                <div style={{ color: 'var(--text-secondary)', fontSize: 14, lineHeight: 1.7, whiteSpace: 'pre-line' }}>
-                  {lesson.reading_text}
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 14 }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+                    <div
+                      style={{
+                        width: 34,
+                        height: 34,
+                        borderRadius: 10,
+                        background: 'rgba(56, 189, 248, 0.15)',
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                      }}
+                    >
+                      <BookOpen size={18} color="#38bdf8" />
+                    </div>
+                    <div>
+                      <div style={{ fontSize: 11, textTransform: 'uppercase', color: '#38bdf8', fontWeight: 700, letterSpacing: '0.05em' }}>
+                        Đoạn văn Đọc hiểu Ngữ cảnh Thực tế
+                      </div>
+                      <h4 style={{ fontSize: 17, fontWeight: 800, color: '#fff', margin: 0 }}>
+                        {lesson.reading_passage?.title || lesson.reading_topic}
+                      </h4>
+                    </div>
+                  </div>
+
+                  <button
+                    className="btn btn-outline"
+                    style={{ padding: '6px 12px', fontSize: 12, gap: 6 }}
+                    onClick={() => speakEnglish(lesson.reading_passage?.passage || lesson.reading_text)}
+                    title="Nghe phát âm chuẩn toàn bộ đoạn văn"
+                  >
+                    <Volume2 size={15} />
+                    <span>Nghe bài đọc</span>
+                  </button>
                 </div>
 
                 <div
                   style={{
-                    marginTop: 16,
-                    padding: 14,
-                    borderRadius: 8,
-                    background: 'rgba(56, 189, 248, 0.06)',
-                    borderLeft: '3px solid #38bdf8',
+                    color: '#e2e8f0',
+                    fontSize: 14,
+                    lineHeight: 1.8,
+                    background: 'rgba(15, 23, 42, 0.5)',
+                    padding: '16px 20px',
+                    borderRadius: 12,
+                    border: '1px solid rgba(255, 255, 255, 0.06)',
                   }}
                 >
-                  <div style={{ fontSize: 13, fontWeight: 600, color: '#38bdf8', marginBottom: 4 }}>
-                    Mẹo tiếp thu:
-                  </div>
-                  <div style={{ fontSize: 12, color: 'var(--text-muted)' }}>
-                    Hãy để ý cách các từ vựng mới được lồng ghép tự nhiên vào các cấu trúc câu phức tạp để tăng điểm phong cách diễn đạt (lexical resource).
-                  </div>
+                  {lesson.reading_passage?.passage || lesson.reading_text}
                 </div>
+
+                {lesson.reading_passage?.highlight_words && lesson.reading_passage.highlight_words.length > 0 && (
+                  <div style={{ marginTop: 14, display: 'flex', alignItems: 'center', gap: 8, flexWrap: 'wrap' }}>
+                    <span style={{ fontSize: 11, color: 'var(--text-muted)', fontWeight: 700, textTransform: 'uppercase' }}>
+                      Từ vựng mục tiêu trong bài:
+                    </span>
+                    {lesson.reading_passage.highlight_words.map((w, idx) => (
+                      <button
+                        key={idx}
+                        onClick={() => speakEnglish(w)}
+                        style={{
+                          background: 'rgba(56, 189, 248, 0.12)',
+                          color: '#38bdf8',
+                          border: '1px solid rgba(56, 189, 248, 0.3)',
+                          borderRadius: 999,
+                          padding: '2px 10px',
+                          fontSize: 12,
+                          fontWeight: 600,
+                          cursor: 'pointer',
+                        }}
+                        title={`Bấm để nghe phát âm: ${w}`}
+                      >
+                        {w} 🔊
+                      </button>
+                    ))}
+                  </div>
+                )}
               </div>
 
-              <div style={{ display: 'flex', justifyContent: 'flex-end', gap: 12 }}>
+              <div style={{ display: 'flex', justifyContent: 'flex-end', gap: 12, marginTop: 4 }}>
                 <button className="btn btn-secondary" onClick={() => setCurrentStep('vocab')}>
                   <ChevronLeft size={16} /> Quay lại Từ vựng
                 </button>
@@ -794,7 +970,7 @@ export const LessonPlayerModal: React.FC<LessonPlayerModalProps> = ({
           {/* STEP 5: QUIZ RESULT & CELEBRATION */}
           {currentStep === 'result' && (
             <div style={{ maxWidth: 640, margin: '0 auto', textAlign: 'center', padding: '20px 0' }}>
-              {quizScore >= Math.ceil(lesson.checkpoint_quiz.length * 0.8) ? (
+              {(completeResult ? completeResult.passed : quizScore >= (lesson.passing_score_pct ?? 60)) ? (
                 <div className="animate-fade-in">
                   <div
                     style={{
@@ -817,11 +993,12 @@ export const LessonPlayerModal: React.FC<LessonPlayerModalProps> = ({
                   </h3>
 
                   <p style={{ color: 'var(--text-secondary)', fontSize: 14, marginBottom: 20 }}>
-                    Bạn đã hoàn thành xuất sắc bài <strong>{lesson.title}</strong> với kết quả{' '}
-                    <strong style={{ color: '#34d399' }}>
-                      {quizScore} / {lesson.checkpoint_quiz.length} câu đúng
-                    </strong>
-                    . Bài học tiếp theo đã được mở khóa!
+                    {completeResult?.feedback_message || (
+                      <>
+                        Bạn đã hoàn thành xuất sắc bài <strong>{lesson.title}</strong> với kết quả{' '}
+                        <strong style={{ color: '#34d399' }}>{quizScore}% điểm</strong>. Bài học tiếp theo đã được mở khóa!
+                      </>
+                    )}
                   </p>
 
                   <div
@@ -838,7 +1015,7 @@ export const LessonPlayerModal: React.FC<LessonPlayerModalProps> = ({
                     >
                       <div style={{ fontSize: 12, color: 'var(--text-muted)' }}>Điểm số</div>
                       <div style={{ fontSize: 24, fontWeight: 800, color: '#34d399' }}>
-                        {Math.round((quizScore / lesson.checkpoint_quiz.length) * 100)}%
+                        {quizScore}%
                       </div>
                     </div>
 
@@ -847,7 +1024,9 @@ export const LessonPlayerModal: React.FC<LessonPlayerModalProps> = ({
                       style={{ padding: '14px 24px', background: 'rgba(30, 41, 59, 0.6)' }}
                     >
                       <div style={{ fontSize: 12, color: 'var(--text-muted)' }}>XP Thưởng</div>
-                      <div style={{ fontSize: 24, fontWeight: 800, color: '#fbbf24' }}>+50 XP</div>
+                      <div style={{ fontSize: 24, fontWeight: 800, color: '#fbbf24' }}>
+                        +{completeResult?.earned_xp || lesson.reward_xp || 60} XP
+                      </div>
                     </div>
 
                     {completeResult && (
@@ -901,12 +1080,41 @@ export const LessonPlayerModal: React.FC<LessonPlayerModalProps> = ({
                   </h3>
 
                   <p style={{ color: 'var(--text-secondary)', fontSize: 14, marginBottom: 20 }}>
-                    Bạn đạt{' '}
-                    <strong style={{ color: '#f87171' }}>
-                      {quizScore} / {lesson.checkpoint_quiz.length} câu đúng
-                    </strong>
-                    . Cần đạt ít nhất 4/5 câu để mở khóa bài tiếp theo. Hãy xem lại giải thích và thử lại nhé!
+                    {completeResult?.feedback_message || (
+                      <>
+                        Bạn đạt <strong style={{ color: '#f87171' }}>{quizScore}% điểm</strong>. Cần đạt tối thiểu {lesson.passing_score_pct || 60}% để mở khóa bài tiếp theo. Hãy xem lại giải thích và thử lại nhé!
+                      </>
+                    )}
                   </p>
+
+                  <div
+                    style={{
+                      display: 'flex',
+                      justifyContent: 'center',
+                      gap: 20,
+                      marginBottom: 28,
+                    }}
+                  >
+                    <div
+                      className="card"
+                      style={{ padding: '14px 24px', background: 'rgba(30, 41, 59, 0.6)' }}
+                    >
+                      <div style={{ fontSize: 12, color: 'var(--text-muted)' }}>Điểm hiện tại</div>
+                      <div style={{ fontSize: 24, fontWeight: 800, color: '#f87171' }}>
+                        {quizScore}%
+                      </div>
+                    </div>
+
+                    <div
+                      className="card"
+                      style={{ padding: '14px 24px', background: 'rgba(30, 41, 59, 0.6)' }}
+                    >
+                      <div style={{ fontSize: 12, color: 'var(--text-muted)' }}>Ngưỡng cần đạt</div>
+                      <div style={{ fontSize: 24, fontWeight: 800, color: '#fbbf24' }}>
+                        {completeResult?.min_passing_score || lesson.passing_score_pct || 60}%
+                      </div>
+                    </div>
+                  </div>
 
                   <div style={{ display: 'flex', justifyContent: 'center', gap: 12 }}>
                     <button className="btn btn-secondary" onClick={() => setCurrentStep('vocab')}>

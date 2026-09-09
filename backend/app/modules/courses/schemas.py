@@ -45,6 +45,27 @@ class CourseDetail(CourseOverview):
     units: list[UnitOverview]
 
 
+class ContrastExample(BaseModel):
+    incorrect: str | None = None
+    correct: str | None = None
+    basic: str | None = None
+    advanced: str | None = None
+    explanation: str
+
+
+class GrammarLessonDetail(BaseModel):
+    concept: str
+    formula: str
+    rules: list[str]
+    contrast_examples: list[ContrastExample] = []
+
+
+class ReadingPassageDetail(BaseModel):
+    title: str
+    passage: str
+    highlight_words: list[str] = []
+
+
 class LessonDetail(BaseModel):
     id: str
     course_id: str
@@ -58,6 +79,10 @@ class LessonDetail(BaseModel):
     grammar_notes: str
     reading_topic: str
     reading_text: str
+    grammar_lesson: GrammarLessonDetail | None = None
+    reading_passage: ReadingPassageDetail | None = None
+    passing_score_pct: int = 60
+    reward_xp: int = 60
     vocabularies: list[VocabularyRead]
     checkpoint_quiz: list[QuizQuestion]
     is_completed: bool
@@ -70,9 +95,13 @@ class LessonCompletePayload(BaseModel):
 
 class LessonCompleteResponse(BaseModel):
     success: bool
+    passed: bool = True
     course_id: str
     completed_lesson_id: str
     score: int
+    min_passing_score: int = 60
+    earned_xp: int = 0
     next_lesson_id: str | None
     unlocked_new_unit: bool
     course_progress_percentage: float
+    feedback_message: str = ""

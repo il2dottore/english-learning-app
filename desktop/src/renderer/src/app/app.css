@@ -435,21 +435,25 @@ body {
   font-weight: 500;
 }
 
-/* Flashcard 3D Experience */
+/* Flashcard 3D Experience - Modern EdTech Studio */
 .flashcard-stage {
+  width: 100%;
   max-width: 680px;
   margin: 0 auto;
-  perspective: 1200px;
-  padding: 10px 0;
+  perspective: 1400px;
+  padding: 8px 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .flashcard-container {
   width: 100%;
-  height: 400px;
+  height: 420px;
   position: relative;
   transform-style: preserve-3d;
-  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 0.55s cubic-bezier(0.34, 1.3, 0.64, 1);
   cursor: pointer;
+  user-select: none;
 }
 
 .flashcard-container.flipped {
@@ -461,23 +465,32 @@ body {
   inset: 0;
   width: 100%;
   height: 100%;
-  border-radius: var(--radius-xl);
+  border-radius: 24px;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 32px;
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.5);
+  padding: 28px 32px;
+  backdrop-filter: blur(16px);
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.flashcard-container:hover .flashcard-face {
+  box-shadow: 0 24px 50px -10px rgba(0, 0, 0, 0.7), 0 0 24px rgba(99, 102, 241, 0.15);
+  border-color: rgba(255, 255, 255, 0.2);
 }
 
 .flashcard-front {
-  background: linear-gradient(145deg, #162036 0%, #0d1527 100%);
+  background: linear-gradient(150deg, #162036 0%, #0d1527 100%);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 20px 40px -12px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.15);
 }
 
 .flashcard-back {
-  background: linear-gradient(145deg, #1b2845 0%, #111b33 100%);
+  background: linear-gradient(150deg, #1a2846 0%, #101a32 100%);
+  border: 1px solid rgba(99, 102, 241, 0.28);
+  box-shadow: 0 20px 40px -12px rgba(0, 0, 0, 0.6), 0 0 20px rgba(99, 102, 241, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.15);
   transform: rotateY(180deg);
 }
 
@@ -485,9 +498,9 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  padding: 4px 10px;
+  padding: 4px 12px;
   border-radius: 999px;
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -496,35 +509,77 @@ body {
 .tag-b2 {
   background: rgba(14, 165, 233, 0.15);
   color: #38bdf8;
-  border: 1px solid rgba(14, 165, 233, 0.3);
+  border: 1px solid rgba(14, 165, 233, 0.35);
 }
 
 .tag-c1 {
   background: rgba(168, 85, 247, 0.15);
   color: #c084fc;
-  border: 1px solid rgba(168, 85, 247, 0.3);
+  border: 1px solid rgba(168, 85, 247, 0.35);
 }
 
 .card-word-large {
-  font-size: 42px;
+  font-size: 46px;
   font-weight: 800;
-  color: #fff;
+  color: #ffffff;
   letter-spacing: -0.03em;
-  margin-bottom: 6px;
+  line-height: 1.15;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
 }
 
 .card-ipa {
-  font-size: 20px;
-  color: var(--primary-light);
+  font-size: 22px;
+  color: #34d399;
   font-weight: 500;
-  font-family: 'Lucida Sans', 'Segoe UI', sans-serif;
+  font-family: 'Consolas', 'Segoe UI', sans-serif;
+  letter-spacing: 0.02em;
 }
 
 .card-pos {
-  font-size: 14px;
+  font-size: 13px;
   color: var(--text-muted);
   font-style: italic;
   font-weight: 600;
+}
+
+/* Study Floating Dock & Controls */
+.study-nav-dock {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  background: rgba(15, 23, 42, 0.85);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--border-subtle);
+  border-radius: 999px;
+  padding: 6px 14px;
+  max-width: 520px;
+  margin: 0 auto;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.4);
+}
+
+.srs-btn-rate {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  padding: 8px 16px;
+  border-radius: var(--radius-md);
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  font-weight: 600;
+}
+
+.srs-btn-rate:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+
+.srs-btn-rate .interval-hint {
+  font-size: 10px;
+  opacity: 0.8;
+  font-weight: 500;
 }
 
 /* Button & Action controls */
@@ -722,3 +777,50 @@ body {
 .animate-fade-in {
   animation: fadeIn 0.3s ease-out forwards;
 }
+
+/* Modal Overlay & Dialog Styles */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(8, 12, 22, 0.88);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99999;
+  padding: 24px;
+  overflow-y: auto;
+}
+
+.modal-dialog {
+  width: 100%;
+  max-width: 960px;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-card);
+  border: 1px solid var(--border-highlight);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7), 0 0 30px rgba(99, 102, 241, 0.2);
+  overflow: hidden;
+  animation: modalPop 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes modalPop {
+  from {
+    opacity: 0;
+    transform: scale(0.96) translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
