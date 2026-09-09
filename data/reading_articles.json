@@ -1,0 +1,304 @@
+{
+  "articles": [
+    {
+      "id": "art_b2_01",
+      "level": "B2",
+      "topic": "Technology & Education",
+      "title": "Artificial Intelligence in Modern Knowledge Synthesis",
+      "reading_time_minutes": 4,
+      "summary": "Khám phá cách thức trí tuệ nhân tạo tái định hình phương pháp tiếp thu kiến thức và những thách thức về đạo đức.",
+      "paragraphs": [
+        "In recent decades, digital technologies have radically transformed educational paradigms across the globe. Modern institutions increasingly deploy sophisticated algorithms to analyze student performance and personalize learning trajectories.",
+        "To maximize pedagogical outcomes, educators must accommodate diverse cognitive abilities while fostering critical thinking. Rather than simply absorbing factual information passively, learners are encouraged to synthesize complex concepts through interactive platforms.",
+        "However, critics caution that over-reliance on automated evaluation may diminish interpersonal engagement. The challenge ahead lies in striking a harmonious balance between technological efficiency and empathetic mentorship."
+      ],
+      "highlighted_vocab": [
+        {
+          "word": "accommodate",
+          "ipa": "/əˈkɒmədeɪt/",
+          "part_of_speech": "verb",
+          "meaning": "đáp ứng, điều chỉnh để phù hợp với nhu cầu",
+          "context": "educators must accommodate diverse cognitive abilities"
+        },
+        {
+          "word": "absorb",
+          "ipa": "/əbˈzɔːb/",
+          "part_of_speech": "verb",
+          "meaning": "hấp thụ, tiếp thu kiến thức",
+          "context": "Rather than simply absorbing factual information passively"
+        },
+        {
+          "word": "synthesize",
+          "ipa": "/ˈsɪnθəsaɪz/",
+          "part_of_speech": "verb",
+          "meaning": "tổng hợp, kết hợp các yếu tố phức tạp",
+          "context": "learners are encouraged to synthesize complex concepts"
+        },
+        {
+          "word": "diminish",
+          "ipa": "/dɪˈmɪnɪʃ/",
+          "part_of_speech": "verb",
+          "meaning": "làm giảm bớt, suy giảm",
+          "context": "may diminish interpersonal engagement"
+        }
+      ],
+      "comprehension_questions": [
+        {
+          "id": 1,
+          "prompt": "Theo đoạn văn, các nhà giáo dục cần làm gì để tối ưu hóa kết quả giảng dạy?",
+          "options": [
+            "Đáp ứng phong cách học đa dạng và khuyến khích tư duy phản biện",
+            "Loại bỏ hoàn toàn sự can thiệp của con người vào việc đánh giá",
+            "Bắt buộc học sinh tiếp thu kiến thức một cách thụ động",
+            "Chỉ tập trung vào các bài kiểm tra trắc nghiệm truyền thống"
+          ],
+          "correct_answer": "Đáp ứng phong cách học đa dạng và khuyến khích tư duy phản biện",
+          "explanation": "Đoạn 2 nêu rõ: 'educators must accommodate diverse cognitive abilities while fostering critical thinking'."
+        },
+        {
+          "id": 2,
+          "prompt": "Từ 'diminish' trong đoạn 3 có nghĩa gần nhất với từ nào?",
+          "options": [
+            "Reduce or weaken",
+            "Expand rapidly",
+            "Stabilize gradually",
+            "Duplicate exactly"
+          ],
+          "correct_answer": "Reduce or weaken",
+          "explanation": "'Diminish' có nghĩa là làm suy giảm hoặc yếu đi (reduce/weaken)."
+        },
+        {
+          "id": 3,
+          "prompt": "Thách thức chính được nêu ở cuối bài là gì?",
+          "options": [
+            "Tìm điểm cân bằng giữa hiệu quả công nghệ và sự hướng dẫn giàu thấu cảm của con người",
+            "Tăng chi phí bản quyền phần mềm giáo dục",
+            "Ngừng sử dụng internet trong trường học",
+            "Chuyển toàn bộ tài liệu in sang dạng sách nói"
+          ],
+          "correct_answer": "Tìm điểm cân bằng giữa hiệu quả công nghệ và sự hướng dẫn giàu thấu cảm của con người",
+          "explanation": "Câu cuối bài kết luận: 'striking a harmonious balance between technological efficiency and empathetic mentorship'."
+        }
+      ]
+    },
+    {
+      "id": "art_c1_01",
+      "level": "C1",
+      "topic": "Environment & Economics",
+      "title": "The Geopolitical Dimensions of the Green Energy Transition",
+      "reading_time_minutes": 5,
+      "summary": "Phân tích những biến động địa chính trị và sự tái cơ cấu chuỗi cung ứng khoáng sản trong quá trình chuyển đổi năng lượng.",
+      "paragraphs": [
+        "The global transition toward decarbonization is often portrayed as an unequivocally benign environmental imperative. However, an objective appraisal reveals profound geopolitical ramifications that threaten to disrupt established multilateral frameworks.",
+        "As nation-states strive to accelerate renewable capacity, unprecedented demand for critical minerals—such as lithium, cobalt, and rare earth elements—has precipitated fierce strategic competition. The concentration of refining infrastructure in specific sovereign jurisdictions confers substantial economic leverage.",
+        "Consequently, policymakers must cultivate resilient supply chains and negotiate transparent bilateral agreements. Failure to address these vulnerabilities could inadvertently precipitate resource nationalism and exacerbate systemic economic disparities."
+      ],
+      "highlighted_vocab": [
+        {
+          "word": "appraisal",
+          "ipa": "/əˈpreɪzl/",
+          "part_of_speech": "noun",
+          "meaning": "sự đánh giá, thẩm định khách quan",
+          "context": "an objective appraisal reveals profound geopolitical ramifications"
+        },
+        {
+          "word": "precipitate",
+          "ipa": "/prɪˈsɪpɪteɪt/",
+          "part_of_speech": "verb",
+          "meaning": "làm dấy lên, thúc đẩy nhanh một sự kiện tiêu cực",
+          "context": "has precipitated fierce strategic competition"
+        },
+        {
+          "word": "leverage",
+          "ipa": "/ˈliːvərɪdʒ/",
+          "part_of_speech": "noun",
+          "meaning": "đòn bẩy, lợi thế chi phối",
+          "context": "confers substantial economic leverage"
+        },
+        {
+          "word": "exacerbate",
+          "ipa": "/ɪɡˈzæsəbeɪt/",
+          "part_of_speech": "verb",
+          "meaning": "làm trầm trọng thêm tình hình",
+          "context": "and exacerbate systemic economic disparities"
+        }
+      ],
+      "comprehension_questions": [
+        {
+          "id": 1,
+          "prompt": "Tác giả thể hiện quan điểm gì về quá trình chuyển đổi xanh trong đoạn 1?",
+          "options": [
+            "Quá trình này mang lại hệ quả địa chính trị sâu sắc chứ không chỉ đơn thuần là vấn đề môi trường",
+            "Quá trình chuyển đổi xanh hoàn toàn không có rủi ro",
+            "Mọi quốc gia đều được hưởng lợi kinh tế ngang nhau",
+            "Các hiệp ước đa phương hiện tại đã hoàn toàn sẵn sàng"
+          ],
+          "correct_answer": "Quá trình này mang lại hệ quả địa chính trị sâu sắc chứ không chỉ đơn thuần là vấn đề môi trường",
+          "explanation": "Đoạn 1 nêu: 'an objective appraisal reveals profound geopolitical ramifications that threaten to disrupt established multilateral frameworks'."
+        },
+        {
+          "id": 2,
+          "prompt": "Yếu tố nào đang tạo ra đòn bẩy kinh tế đáng kể (economic leverage)?",
+          "options": [
+            "Sự tập trung cơ sở hạ tầng tinh chế khoáng sản tại một số quốc gia",
+            "Sự sụt giảm nhu cầu tiêu thụ pin điện toàn cầu",
+            "Chi phí khai thác dầu mỏ tăng cao",
+            "Sự suy yếu của các thỏa thuận thương mại song phương"
+          ],
+          "correct_answer": "Sự tập trung cơ sở hạ tầng tinh chế khoáng sản tại một số quốc gia",
+          "explanation": "Đoạn 2 nêu: 'The concentration of refining infrastructure in specific sovereign jurisdictions confers substantial economic leverage'."
+        },
+        {
+          "id": 3,
+          "prompt": "Từ 'exacerbate' đồng nghĩa với từ nào sau đây?",
+          "options": [
+            "Worsen or aggravate",
+            "Alleviate or cure",
+            "Consolidate firmly",
+            "Regulate evenly"
+          ],
+          "correct_answer": "Worsen or aggravate",
+          "explanation": "'Exacerbate' có nghĩa là làm trầm trọng thêm (worsen / aggravate)."
+        }
+      ]
+    },
+    {
+      "id": "art_b2_02",
+      "level": "B2",
+      "topic": "Psychology & Well-being",
+      "title": "The Psychology of Habit Formation in the Digital Era",
+      "reading_time_minutes": 4,
+      "summary": "Khám phá cơ chế vòng lặp thói quen thần kinh học và phương pháp thiết lập lối sống cân bằng trước các tác nhân gây xao nhãng.",
+      "paragraphs": [
+        "Human behavior is governed to a remarkable extent by automatic routines known as habits. Neuroscientists emphasize that habits emerge because the brain constantly seeks ways to conserve mental energy during daily decision-making.",
+        "The habitual cycle consists of three fundamental components: an environmental cue, a behavioral routine, and a subsequent reward. In our digital era, smartphone notifications exploit this neurological loop with extraordinary precision.",
+        "To cultivate positive lifestyle adaptations, individuals must consciously identify their underlying triggers. By substituting unhealthy impulse reactions with constructive behaviors, one can systematically regain cognitive autonomy."
+      ],
+      "highlighted_vocab": [
+        {
+          "word": "conserve",
+          "ipa": "/kənˈsɜːv/",
+          "part_of_speech": "verb",
+          "meaning": "bảo tồn, tiết kiệm năng lượng",
+          "context": "constantly seeks ways to conserve mental energy"
+        },
+        {
+          "word": "subsequent",
+          "ipa": "/ˈsʌbsɪkwənt/",
+          "part_of_speech": "adjective",
+          "meaning": "xảy ra sau đó, liên tiếp",
+          "context": "and a subsequent reward"
+        },
+        {
+          "word": "exploit",
+          "ipa": "/ɪkˈsplɔɪt/",
+          "part_of_speech": "verb",
+          "meaning": "khai thác, tận dụng triệt để",
+          "context": "smartphone notifications exploit this neurological loop"
+        },
+        {
+          "word": "autonomy",
+          "ipa": "/ɔːˈtɒnəmi/",
+          "part_of_speech": "noun",
+          "meaning": "sự tự chủ, quyền tự quyết",
+          "context": "systematically regain cognitive autonomy"
+        }
+      ],
+      "comprehension_questions": [
+        {
+          "id": 1,
+          "prompt": "Tại sao bộ não con người lại hình thành các thói quen tự động?",
+          "options": [
+            "Để tiết kiệm năng lượng tinh thần khi đưa ra quyết định hàng ngày",
+            "Vì con người không có khả năng học hỏi kỹ năng mới",
+            "Để phụ thuộc hoàn toàn vào các thiết bị công nghệ",
+            "Nhằm tránh giao tiếp xã hội với người xung quanh"
+          ],
+          "correct_answer": "Để tiết kiệm năng lượng tinh thần khi đưa ra quyết định hàng ngày",
+          "explanation": "Đoạn 1 nêu: 'the brain constantly seeks ways to conserve mental energy during daily decision-making'."
+        },
+        {
+          "id": 2,
+          "prompt": "Ba thành phần cốt lõi của một vòng lặp thói quen là gì?",
+          "options": [
+            "Tín hiệu (Cue), Thói quen (Routine), Phần thưởng (Reward)",
+            "Mục tiêu, Áp lực, Khen thưởng",
+            "Nhận thức, Phản biện, Thích nghi",
+            "Động lực, Kỷ luật, Thành công"
+          ],
+          "correct_answer": "Tín hiệu (Cue), Thói quen (Routine), Phần thưởng (Reward)",
+          "explanation": "Đoạn 2 nêu rõ: 'an environmental cue, a behavioral routine, and a subsequent reward'."
+        }
+      ]
+    },
+    {
+      "id": "art_c1_02",
+      "level": "C1",
+      "topic": "Urban Sociology",
+      "title": "Metropolitan Density and the Reimagining of Public Space",
+      "reading_time_minutes": 5,
+      "summary": "Nghiên cứu về mật độ dân cư đô thị hiện đại và yêu cầu tái thiết kế các không gian công cộng gắn liền với sự gắn kết cộng đồng.",
+      "paragraphs": [
+        "Rapid urbanization across the 21st century has engendered unprecedented spatial constraints in global megacities. Urban planners now confront the formidable challenge of preserving civic cohesion amidst escalating commercial privatization.",
+        "Public squares, pedestrian corridors, and communal parks serve as indispensable egalitarian sanctuaries. When designed with deliberate inclusivity, these spaces foster serendipitous encounters that transcend socio-economic stratification.",
+        "Conversely, the relentless commodification of urban real estate risks precipitating profound alienation among vulnerable demographics. Sustainable urban resilience necessitates prioritizing collective well-being over speculative capital accumulation."
+      ],
+      "highlighted_vocab": [
+        {
+          "word": "engender",
+          "ipa": "/ɪnˈdʒendə/",
+          "part_of_speech": "verb",
+          "meaning": "sinh ra, đem lại, là nguồn gốc của",
+          "context": "has engendered unprecedented spatial constraints"
+        },
+        {
+          "word": "cohesion",
+          "ipa": "/kəʊˈhiːʒn/",
+          "part_of_speech": "noun",
+          "meaning": "sự gắn kết, cố kết cộng đồng",
+          "context": "preserving civic cohesion amidst escalating privatization"
+        },
+        {
+          "word": "serendipitous",
+          "ipa": "/ˌserənˈdɪpɪtəs/",
+          "part_of_speech": "adjective",
+          "meaning": "tình cờ, may mắn đầy bất ngờ",
+          "context": "foster serendipitous encounters"
+        },
+        {
+          "word": "stratification",
+          "ipa": "/ˌstrætɪfɪˈkeɪʃn/",
+          "part_of_speech": "noun",
+          "meaning": "sự phân tầng xã hội",
+          "context": "transcend socio-economic stratification"
+        }
+      ],
+      "comprehension_questions": [
+        {
+          "id": 1,
+          "prompt": "Không gian công cộng hòa nhập mang lại giá trị xã hội nào theo đoạn 2?",
+          "options": [
+            "Tạo ra những cuộc gặp gỡ tình cờ vượt qua ranh giới phân tầng giai cấp",
+            "Tối đa hóa doanh thu thương mại cho các tập đoàn bán lẻ",
+            "Tăng giá trị bất động sản đầu cơ cho các nhà đầu tư",
+            "Phân tách cư dân theo mức thu nhập"
+          ],
+          "correct_answer": "Tạo ra những cuộc gặp gỡ tình cờ vượt qua ranh giới phân tầng giai cấp",
+          "explanation": "Đoạn 2 nêu: 'foster serendipitous encounters that transcend socio-economic stratification'."
+        },
+        {
+          "id": 2,
+          "prompt": "Từ 'engender' có nghĩa gần nhất với từ nào?",
+          "options": [
+            "Produce or give rise to",
+            "Eradicate completely",
+            "Constrain narrowly",
+            "Postpone indefinitely"
+          ],
+          "correct_answer": "Produce or give rise to",
+          "explanation": "'Engender' có nghĩa là đem lại hoặc sinh ra (produce / give rise to)."
+        }
+      ]
+    }
+  ]
+}

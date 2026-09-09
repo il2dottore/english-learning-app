@@ -11,7 +11,13 @@ from app.core.config import get_settings
 from app.core.exceptions import AppException
 from app.core.logging import configure_logging
 from app.db.session import init_db
+from app.modules.courses.router import router as courses_router
 from app.modules.products.router import router as products_router
+from app.modules.profile.router import router as profile_router
+from app.modules.progress.router import router as progress_router
+from app.modules.skills.router import router as skills_router
+from app.modules.testing.router import router as testing_router
+from app.modules.vocabulary.router import router as vocabulary_router
 
 
 @asynccontextmanager
@@ -54,3 +60,9 @@ def health_check() -> dict[str, str]:
 
 
 app.include_router(products_router)
+app.include_router(vocabulary_router)
+app.include_router(courses_router)
+app.include_router(testing_router)
+app.include_router(progress_router)
+app.include_router(skills_router)
+app.include_router(profile_router)

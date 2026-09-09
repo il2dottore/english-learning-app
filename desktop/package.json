@@ -12,15 +12,16 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
+    "lucide-react": "^1.43.0",
     "react": "latest",
     "react-dom": "latest"
   },
   "devDependencies": {
-    "@vitejs/plugin-react": "^5.0.4",
-    "@types/react": "latest",
     "@types/node": "latest",
+    "@types/react": "latest",
     "@types/react-dom": "latest",
-    "electron": "latest",
+    "@vitejs/plugin-react": "^5.0.4",
+    "electron": "^43.4.1",
     "electron-vite": "^5.0.0",
     "typescript": "latest",
     "vite": "^7.3.0"

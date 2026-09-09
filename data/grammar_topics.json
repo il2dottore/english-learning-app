@@ -1,0 +1,232 @@
+{
+  "topics": [
+    {
+      "id": "b2_mixed_conditionals",
+      "level": "B2",
+      "title": "Mixed Conditionals (Câu Điều Kiện Hỗn Hợp)",
+      "category": "Conditional Structures",
+      "formula": "If + Past Perfect (S + had + V3), S + would/could + V-bare (Kết quả hiện tại)",
+      "description": "Dùng để diễn tả một giả định trái ngược với quá khứ nhưng để lại kết quả ảnh hưởng trực tiếp đến hiện tại.",
+      "examples": [
+        {
+          "basic": "She didn't study hard in college. Now she is not a senior director.",
+          "advanced": "If she had studied harder in college, she would be a senior director today.",
+          "note": "Giả định trong quá khứ (had studied) dẫn đến kết quả ở hiện tại (would be today)."
+        },
+        {
+          "basic": "I didn't take your advice yesterday. Now I am in deep trouble.",
+          "advanced": "If I had taken your advice, I wouldn't be in such trouble right now.",
+          "note": "Hành động quá khứ ảnh hưởng đến trạng thái hiện tại."
+        }
+      ],
+      "practice_questions": [
+        {
+          "id": 1,
+          "prompt": "Chọn câu chính xác: 'If we ______ the contract last week, we ______ the new factory today.'",
+          "options": [
+            "had signed / would be operating",
+            "signed / will operate",
+            "have signed / would operate",
+            "had signed / operated"
+          ],
+          "correct_answer": "had signed / would be operating",
+          "explanation": "Hành động tuần trước dùng Past Perfect 'had signed', kết quả hôm nay dùng 'would be operating'."
+        },
+        {
+          "id": 2,
+          "prompt": "Viết lại câu: 'He didn't save any money, so he can't afford this apartment now.'",
+          "options": [
+            "If he had saved money, he could afford this apartment now.",
+            "If he saved money, he could have afforded this apartment now.",
+            "If he has saved money, he will afford this apartment now.",
+            "If he had saved money, he could had afforded this apartment now."
+          ],
+          "correct_answer": "If he had saved money, he could afford this apartment now.",
+          "explanation": "Điều kiện hỗn hợp loại 3-2: If + had saved, S + could afford now."
+        }
+      ]
+    },
+    {
+      "id": "b2_passive_reporting",
+      "level": "B2",
+      "title": "Passive Voice with Reporting Verbs (Bị Động Khách Quan)",
+      "category": "Academic Writing Style",
+      "formula": "It is + V3_reporting + that S + V  hoặc  S + is/are/was + V3_reporting + to V / to have V3",
+      "description": "Cấu trúc kinh điển trong văn phong báo chí và học thuật để truyền tải thông tin khách quan, tránh khẳng định chủ quan.",
+      "examples": [
+        {
+          "basic": "People believe that regular exercise reduces chronic stress.",
+          "advanced": "It is widely believed that regular exercise reduces chronic stress.",
+          "note": "Cấu trúc vô nhân xưng 'It is believed that'."
+        },
+        {
+          "basic": "Scientists consider that the new compound is remarkably stable.",
+          "advanced": "The new compound is considered to be remarkably stable.",
+          "note": "Chuyển tân ngữ lên làm chủ ngữ: S + is considered to be."
+        }
+      ],
+      "practice_questions": [
+        {
+          "id": 1,
+          "prompt": "Chọn câu bị động khách quan đúng cho: 'Experts estimate that global temperatures will rise by 1.5°C.'",
+          "options": [
+            "Global temperatures are estimated to rise by 1.5°C.",
+            "It estimates that global temperatures will rise by 1.5°C.",
+            "Global temperatures estimate to be rising by 1.5°C.",
+            "It is estimating that global temperatures rise by 1.5°C."
+          ],
+          "correct_answer": "Global temperatures are estimated to rise by 1.5°C.",
+          "explanation": "Chuyển S lên đầu: 'Global temperatures are estimated to rise by 1.5°C'."
+        }
+      ]
+    },
+    {
+      "id": "b2_cleft_sentences",
+      "level": "B2",
+      "title": "Cleft Sentences for Emphasis (Câu Chẻ Nhấn Mạnh)",
+      "category": "Stylistic Devices",
+      "formula": "It is/was + [Thành phần cần nhấn mạnh] + that/who + ...  hoặc  What + S + V + is/was + ...",
+      "description": "Tách một mệnh đề đơn thành 2 phần để làm nổi bật thông tin quan trọng nhất trong câu.",
+      "examples": [
+        {
+          "basic": "Her remarkable perseverance impressed the hiring committee.",
+          "advanced": "It was her remarkable perseverance that impressed the hiring committee.",
+          "note": "Nhấn mạnh chủ ngữ bằng 'It was X that'."
+        },
+        {
+          "basic": "We urgently need comprehensive regulatory oversight.",
+          "advanced": "What we urgently need is comprehensive regulatory oversight.",
+          "note": "Câu chẻ Wh-cleft dùng 'What S V is'."
+        }
+      ],
+      "practice_questions": [
+        {
+          "id": 1,
+          "prompt": "Nhấn mạnh đối tượng 'the economic inequality' trong câu: 'The government must address the economic inequality.'",
+          "options": [
+            "It is the economic inequality that the government must address.",
+            "What the government addresses is the economic inequality.",
+            "It was the economic inequality which the government addressed.",
+            "That the economic inequality is what the government must address."
+          ],
+          "correct_answer": "It is the economic inequality that the government must address.",
+          "explanation": "Công thức: It is + [thành phần nhấn mạnh] + that + S + V."
+        }
+      ]
+    },
+    {
+      "id": "c1_inversion",
+      "level": "C1",
+      "title": "Inversion with Negative Adverbials (Đảo Ngữ Trạng Từ Phủ Định)",
+      "category": "Advanced Academic Rhetoric",
+      "formula": "Negative/Limiting Adverb + Auxiliary Verb + Subject + Main Verb",
+      "description": "Đưa các trạng từ mang nghĩa phủ định hoặc hạn định (Rarely, Seldom, Scarcely, Never before, Under no circumstances, Not only... but also) lên đầu câu để tạo âm hưởng trang trọng và hùng biện.",
+      "examples": [
+        {
+          "basic": "We have rarely witnessed such catastrophic environmental degradation.",
+          "advanced": "Rarely have we witnessed such catastrophic environmental degradation.",
+          "note": "Đưa 'Rarely' lên đầu và đảo trợ động từ 'have' lên trước chủ ngữ 'we'."
+        },
+        {
+          "basic": "Employees must not disclose confidential trade secrets under any circumstances.",
+          "advanced": "Under no circumstances must employees disclose confidential trade secrets.",
+          "note": "Cụm 'Under no circumstances' đứng đầu câu đòi hỏi đảo trợ động từ 'must'."
+        }
+      ],
+      "practice_questions": [
+        {
+          "id": 1,
+          "prompt": "Chọn câu đảo ngữ chính xác cho: 'He had scarcely completed the presentation when the power failed.'",
+          "options": [
+            "Scarcely had he completed the presentation when the power failed.",
+            "Scarcely he had completed the presentation when the power failed.",
+            "Scarcely did he complete the presentation when the power had failed.",
+            "Scarcely completed he the presentation when the power failed."
+          ],
+          "correct_answer": "Scarcely had he completed the presentation when the power failed.",
+          "explanation": "Đảo ngữ với 'Scarcely': Scarcely + had + S + V3."
+        },
+        {
+          "id": 2,
+          "prompt": "Chọn câu đảo ngữ đúng: 'Not only ______ the project on schedule, but they also reduced overall expenditures.'",
+          "options": [
+            "did they finish",
+            "they finished",
+            "have they finished",
+            "they did finish"
+          ],
+          "correct_answer": "did they finish",
+          "explanation": "Mệnh đề quá khứ đơn đảo ngữ mượn trợ động từ 'did': Not only did they finish..."
+        }
+      ]
+    },
+    {
+      "id": "c1_subjunctive_mood",
+      "level": "C1",
+      "title": "The Subjunctive Mood (Thể Giả Định Học Thuật)",
+      "category": "Formal Demands & Recommendations",
+      "formula": "It is essential/vital/imperative that S + (should) + V-bare",
+      "description": "Dùng trong các văn bản pháp lý, chính sách học thuật để thể hiện yêu cầu, kiến nghị khẩn thiết hoặc tầm quan trọng đặc biệt.",
+      "examples": [
+        {
+          "basic": "It is vital that all participants submit their reports before Friday.",
+          "advanced": "It is vital that all participants submit their reports before Friday.",
+          "note": "Động từ 'submit' giữ nguyên dạng bare infinitive cho mọi ngôi."
+        },
+        {
+          "basic": "The commission demanded that the CEO resign immediately.",
+          "advanced": "The commission demanded that the CEO resign immediately.",
+          "note": "Động từ 'resign' giữ nguyên dạng bare infinitive dù chủ ngữ là 'the CEO' số ít."
+        }
+      ],
+      "practice_questions": [
+        {
+          "id": 1,
+          "prompt": "Chọn phương án đúng: 'The board of directors insisted that the financial audit ______ by an independent firm.'",
+          "options": [
+            "be conducted",
+            "is conducted",
+            "was conducted",
+            "would be conducted"
+          ],
+          "correct_answer": "be conducted",
+          "explanation": "Thể giả định bị động dùng 'be + V3': 'that the audit be conducted'."
+        }
+      ]
+    },
+    {
+      "id": "c1_participle_clauses",
+      "level": "C1",
+      "title": "Participle Clauses (Mệnh Đề Phân Từ Rút Gọn)",
+      "category": "Advanced Sentence Synthesis",
+      "formula": "Present Participle (V-ing)  hoặc  Perfect Participle (Having + V3) / (Having been + V3)",
+      "description": "Rút gọn 2 mệnh đề có cùng chủ ngữ để tạo nên câu văn súc tích, uyển chuyển và mang tính học thuật cao.",
+      "examples": [
+        {
+          "basic": "Because they had exhausted all legal avenues, the litigants accepted arbitration.",
+          "advanced": "Having exhausted all legal avenues, the litigants accepted arbitration.",
+          "note": "Dùng 'Having exhausted' để nhấn mạnh hành động hoàn tất trước hành động chính."
+        },
+        {
+          "basic": "When the compound is exposed to direct sunlight, it decomposes rapidly.",
+          "advanced": "Exposed to direct sunlight, the compound decomposes rapidly.",
+          "note": "Mệnh đề bị động rút gọn thành Past Participle 'Exposed'."
+        }
+      ],
+      "practice_questions": [
+        {
+          "id": 1,
+          "prompt": "Rút gọn câu: 'After she had collected extensive empirical evidence, the researcher published her treatise.'",
+          "options": [
+            "Having collected extensive empirical evidence, the researcher published her treatise.",
+            "Collecting extensive empirical evidence, the researcher published her treatise.",
+            "Had collected extensive empirical evidence, the researcher published her treatise.",
+            "Having been collected extensive empirical evidence, the researcher published her treatise."
+          ],
+          "correct_answer": "Having collected extensive empirical evidence, the researcher published her treatise.",
+          "explanation": "Hành động thu thập diễn ra trước hành động xuất bản: dùng Perfect Participle 'Having collected'."
+        }
+      ]
+    }
+  ]
+}

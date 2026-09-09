@@ -18,6 +18,9 @@ class ApiClient:
     def post(self, url: str, *, json: dict[str, Any]) -> Response:
         return asyncio.run(self._request("POST", url, json=json))
 
+    def put(self, url: str, *, json: dict[str, Any]) -> Response:
+        return asyncio.run(self._request("PUT", url, json=json))
+
     async def _request(self, method: str, url: str, **kwargs: Any) -> Response:
         transport = ASGITransport(app=app)
         async with AsyncClient(transport=transport, base_url="http://testserver") as client:

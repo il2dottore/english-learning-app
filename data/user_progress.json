@@ -1,0 +1,14 @@
+{
+  "starred": [],
+  "reviews": {
+    "1": {
+      "box_level": 5,
+      "interval_days": 22917,
+      "ease_factor": 2.5,
+      "repetition_count": 11,
+      "last_reviewed_at": "2026-09-09T14:37:25.707414+00:00",
+      "next_review_at": "2089-06-07T14:37:25.707414+00:00",
+      "status": "mastered"
+    }
+  }
+}
