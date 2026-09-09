@@ -12,17 +12,29 @@ english-learning-app/
 \-- README.md             # Project overview
 ```
 
-## Run
+## Setup & Run
 
-Backend:
+### 1. Backend (FastAPI)
 
 ```bash
 cd backend
 uv sync --dev
-uv run uvicorn app.main:app --reload --port 8000
+uv run uvicorn app.main:app --reload --port 8005
 ```
 
-Desktop app, in another terminal:
+Quality check & tests:
+
+```bash
+uv run pytest
+uv run ruff check .
+uv run pyright
+```
+
+API Documentation: <http://127.0.0.1:8005/docs>
+
+### 2. Desktop App (Electron + React)
+
+Trong một terminal khác:
 
 ```bash
 cd desktop
@@ -30,4 +42,3 @@ npm install
 npm run dev
 ```
 
-Backend docs: <http://127.0.0.1:8000/docs>
